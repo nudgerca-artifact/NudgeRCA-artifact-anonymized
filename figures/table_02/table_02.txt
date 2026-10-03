@@ -1,0 +1,12 @@
+| Dataset | System | Train | Eval. |
+|---|---|---|---|
+| *Training and evaluation within each system* | | | |
+| Telecom | Telecom service | 30 | 21 |
+| Bank | Banking service | 80 | 56 |
+| Market | HipsterShop | 88 | 60 |
+| AIOps 2025 | HipsterShop | 241 | 159 |
+| *Evaluation on held-out datasets* | | | |
+| DejaVu-A | Major ISP system | - | 63 |
+| DejaVu-B | Major ISP system | - | 90 |
+| Eadro-SN | SocialNetwork | - | 10 |
+| GAIA | MicroSS | - | 255 |

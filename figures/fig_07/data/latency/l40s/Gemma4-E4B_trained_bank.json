@@ -1,0 +1,82 @@
+{
+ "model": "Gemma4-E4B_trained_bank",
+ "dtype": "auto",
+ "n": 10,
+ "sec_mean": 24.22,
+ "sec_median": 23.46,
+ "tok_per_s_mean": 52.6,
+ "out_tokens_mean": 1275,
+ "gpu_after": "0 MiB, 46068 MiB, NVIDIA L40S\n41861 MiB, 46068 MiB, NVIDIA L40S",
+ "records": [
+  {
+   "case_id": "qb_000",
+   "sec": 23.96,
+   "out_tokens": 1158,
+   "tok_per_s": 48.3,
+   "prompt_tokens": 2381
+  },
+  {
+   "case_id": "qb_001",
+   "sec": 22.81,
+   "out_tokens": 1206,
+   "tok_per_s": 52.9,
+   "prompt_tokens": 3166
+  },
+  {
+   "case_id": "qb_005",
+   "sec": 26.91,
+   "out_tokens": 1432,
+   "tok_per_s": 53.2,
+   "prompt_tokens": 1997
+  },
+  {
+   "case_id": "qb_011",
+   "sec": 20.66,
+   "out_tokens": 1088,
+   "tok_per_s": 52.7,
+   "prompt_tokens": 3412
+  },
+  {
+   "case_id": "qb_012",
+   "sec": 23.9,
+   "out_tokens": 1261,
+   "tok_per_s": 52.8,
+   "prompt_tokens": 3391
+  },
+  {
+   "case_id": "qb_013",
+   "sec": 21.07,
+   "out_tokens": 1120,
+   "tok_per_s": 53.2,
+   "prompt_tokens": 2752
+  },
+  {
+   "case_id": "qb_014",
+   "sec": 30.61,
+   "out_tokens": 1629,
+   "tok_per_s": 53.2,
+   "prompt_tokens": 2733
+  },
+  {
+   "case_id": "qb_015",
+   "sec": 28.27,
+   "out_tokens": 1514,
+   "tok_per_s": 53.6,
+   "prompt_tokens": 2211
+  },
+  {
+   "case_id": "qb_016",
+   "sec": 21.02,
+   "out_tokens": 1120,
+   "tok_per_s": 53.3,
+   "prompt_tokens": 2566
+  },
+  {
+   "case_id": "qb_024",
+   "sec": 23.02,
+   "out_tokens": 1226,
+   "tok_per_s": 53.2,
+   "prompt_tokens": 2713
+  }
+ ]
+}

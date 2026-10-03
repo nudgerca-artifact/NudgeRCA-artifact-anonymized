@@ -1,0 +1,8 @@
+| Condition | Top-1 comp. | Name | Family |
+|---|---|---|---|
+| No injection | 16.4 % (9/55) | - | - |
+| Same cause, names kept | 56.1 % (215/383) | 56.1 % (215/383) | 81.5 % (312/383) |
+| Same cause, names masked | 20.9 % (80/383) | - | - |
+| Different cause, names kept | 8.6 % (352/4071) | 43.7 % (1781/4071) | 66.9 % (2723/4071) |
+
+Pairs: same cause 383 (55 incidents), different cause 4072 (one answer cut at the token limit, left out); answers without a readable ranking are left out.

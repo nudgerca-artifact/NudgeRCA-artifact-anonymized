@@ -1,0 +1,28 @@
+## Component Graph
+The relationship between some of the components in this system are as follows: - apache and apache02 have a "Instantiate" relation
+- apache02 and apache02 OS Disk have a "Resource" relation
+- Tomcat and Tomcat01 have a "Instantiate" relation
+- Tomcat and Tomcat02 have a "Instantiate" relation
+- Tomcat and Tomcat03 have a "Instantiate" relation
+- Tomcat and Tomcat04 have a "Instantiate" relation
+- Tomcat and MG have a "Dependency" relation
+- Tomcat and Redis01 have a "Dependency" relation
+- Tomcat01 and Tomcat01 OS Disk have a "Resource" relation
+- Tomcat01 and Tomcat01 OS FS have a "Resource" relation
+- Tomcat01 and Tomcat01 OS Memory have a "Resource" relation
+- Tomcat02 and Tomcat02 OS Disk have a "Resource" relation
+- Tomcat02 and Tomcat02 OS Memory have a "Resource" relation
+- Tomcat02 and Tomcat02 OS FS have a "Resource" relation
+- Tomcat03 and Tomcat03 OS Disk have a "Resource" relation
+- Tomcat04 and Tomcat04 OS FS have a "Resource" relation
+- Tomcat04 and Tomcat04 OS Disk have a "Resource" relation
+- Tomcat04 and Tomcat04 OS CPU have a "Resource" relation
+- MG and MG01 have a "Instantiate" relation
+- MG and MG02 have a "Instantiate" relation
+- MG01 and MG01 OS Disk have a "Resource" relation
+- MG01 and MG01 OS Memory have a "Resource" relation
+- MG02 and MG02 OS CPU have a "Resource" relation
+- Redis and Redis01 have a "Instantiate" relation
+- Redis and Redis02 have a "Instantiate" relation
+- Redis01 and Redis01 Redis Resources have a "Resource" relation
+- Redis02 and Redis02 OS ZABBIX have a "Resource" relation

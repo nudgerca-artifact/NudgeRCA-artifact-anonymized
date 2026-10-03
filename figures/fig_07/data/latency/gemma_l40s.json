@@ -1,0 +1,40 @@
+{
+ "Gemma4-E4B-trained": {
+  "telecom": {
+   "s_per_incident": 27.08,
+   "n": 10
+  },
+  "bank": {
+   "s_per_incident": 24.22,
+   "n": 10
+  },
+  "market": {
+   "s_per_incident": 46.78,
+   "n": 10
+  },
+  "mean_three_datasets": {
+   "s_per_incident": 32.69
+  }
+ },
+ "_note": "one L40S, first 10 evaluation incidents per dataset (same incidents as the Qwen3 probes), one response, model loading excluded. trained: bf16 with the adapter applied by vLLM; trained-int4: the GPTQ W4A16 model, bf16 activations.",
+ "Gemma4-E4B-trained-int4": {
+  "telecom": {
+   "s_per_incident": 12.13,
+   "n": 10,
+   "out_tokens": 1445
+  },
+  "bank": {
+   "s_per_incident": 10.13,
+   "n": 10,
+   "out_tokens": 1196
+  },
+  "market": {
+   "s_per_incident": 18.9,
+   "n": 10,
+   "out_tokens": 1952
+  },
+  "mean_three_datasets": {
+   "s_per_incident": 13.72
+  }
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "model": "Qwen/Qwen3-4B",
+ "lora": "nudgerca/adapters/ours/telecom",
+ "n": 20,
+ "sec_mean": 49.58,
+ "sec_median": 45.04,
+ "tok_per_s_mean": 56.5,
+ "out_tokens_mean": 2798,
+ "gpu_after": "42561 MiB, 46068 MiB, NVIDIA L40S",
+ "records": [
+  {
+   "case_id": "qt_009",
+   "sec": 78.65,
+   "out_tokens": 4417,
+   "tok_per_s": 56.2,
+   "prompt_tokens": 1376
+  },
+  {
+   "case_id": "qt_012",
+   "sec": 48.73,
+   "out_tokens": 2761,
+   "tok_per_s": 56.7,
+   "prompt_tokens": 2495
+  },
+  {
+   "case_id": "qt_035",
+   "sec": 65.6,
+   "out_tokens": 3664,
+   "tok_per_s": 55.9,
+   "prompt_tokens": 3350
+  },
+  {
+   "case_id": "qt_040",
+   "sec": 36.81,
+   "out_tokens": 2097,
+   "tok_per_s": 57.0,
+   "prompt_tokens": 2423
+  },
+  {
+   "case_id": "qt_044",
+   "sec": 73.92,
+   "out_tokens": 4090,
+   "tok_per_s": 55.3,
+   "prompt_tokens": 2628
+  },
+  {
+   "case_id": "qt_050",
+   "sec": 30.12,
+   "out_tokens": 1699,
+   "tok_per_s": 56.4,
+   "prompt_tokens": 2188
+  },
+  {
+   "case_id": "qt_003",
+   "sec": 34.32,
+   "out_tokens": 1935,
+   "tok_per_s": 56.4,
+   "prompt_tokens": 2938
+  },
+  {
+   "case_id": "qt_005",
+   "sec": 45.82,
+   "out_tokens": 2612,
+   "tok_per_s": 57.0,
+   "prompt_tokens": 2120
+  },
+  {
+   "case_id": "qt_006",
+   "sec": 47.49,
+   "out_tokens": 2717,
+   "tok_per_s": 57.2,
+   "prompt_tokens": 1586
+  },
+  {
+   "case_id": "qt_011",
+   "sec": 41.71,
+   "out_tokens": 2368,
+   "tok_per_s": 56.8,
+   "prompt_tokens": 2328
+  },
+  {
+   "case_id": "qt_027",
+   "sec": 67.52,
+   "out_tokens": 3775,
+   "tok_per_s": 55.9,
+   "prompt_tokens": 2759
+  },
+  {
+   "case_id": "qt_039",
+   "sec": 29.96,
+   "out_tokens": 1719,
+   "tok_per_s": 57.4,
+   "prompt_tokens": 1767
+  },
+  {
+   "case_id": "qt_028",
+   "sec": 54.97,
+   "out_tokens": 3087,
+   "tok_per_s": 56.2,
+   "prompt_tokens": 2878
+  },
+  {
+   "case_id": "qt_021",
+   "sec": 39.89,
+   "out_tokens": 2271,
+   "tok_per_s": 56.9,
+   "prompt_tokens": 2213
+  },
+  {
+   "case_id": "qt_024",
+   "sec": 40.03,
+   "out_tokens": 2248,
+   "tok_per_s": 56.2,
+   "prompt_tokens": 3161
+  },
+  {
+   "case_id": "qt_020",
+   "sec": 40.19,
+   "out_tokens": 2300,
+   "tok_per_s": 57.2,
+   "prompt_tokens": 1916
+  },
+  {
+   "case_id": "qt_031",
+   "sec": 44.26,
+   "out_tokens": 2527,
+   "tok_per_s": 57.1,
+   "prompt_tokens": 1850
+  },
+  {
+   "case_id": "qt_029",
+   "sec": 37.22,
+   "out_tokens": 2100,
+   "tok_per_s": 56.4,
+   "prompt_tokens": 2915
+  },
+  {
+   "case_id": "qt_041",
+   "sec": 55.31,
+   "out_tokens": 3134,
+   "tok_per_s": 56.7,
+   "prompt_tokens": 2251
+  },
+  {
+   "case_id": "qt_048",
+   "sec": 79.1,
+   "out_tokens": 4437,
+   "tok_per_s": 56.1,
+   "prompt_tokens": 2635
+  }
+ ]
+}

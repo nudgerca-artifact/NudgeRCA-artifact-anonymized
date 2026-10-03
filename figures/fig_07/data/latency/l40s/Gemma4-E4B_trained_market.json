@@ -1,0 +1,82 @@
+{
+ "model": "Gemma4-E4B_trained_market",
+ "dtype": "auto",
+ "n": 10,
+ "sec_mean": 46.78,
+ "sec_median": 42.52,
+ "tok_per_s_mean": 48.4,
+ "out_tokens_mean": 2219,
+ "gpu_after": "16187 MiB, 46068 MiB, NVIDIA L40S\n42611 MiB, 46068 MiB, NVIDIA L40S",
+ "records": [
+  {
+   "case_id": "qm1_010",
+   "sec": 35.77,
+   "out_tokens": 1777,
+   "tok_per_s": 49.7,
+   "prompt_tokens": 7260
+  },
+  {
+   "case_id": "qm1_016",
+   "sec": 36.53,
+   "out_tokens": 1840,
+   "tok_per_s": 50.4,
+   "prompt_tokens": 8526
+  },
+  {
+   "case_id": "qm1_019",
+   "sec": 37.22,
+   "out_tokens": 1855,
+   "tok_per_s": 49.8,
+   "prompt_tokens": 9662
+  },
+  {
+   "case_id": "qm1_022",
+   "sec": 65.44,
+   "out_tokens": 3125,
+   "tok_per_s": 47.8,
+   "prompt_tokens": 7888
+  },
+  {
+   "case_id": "qm1_023",
+   "sec": 79.54,
+   "out_tokens": 2963,
+   "tok_per_s": 37.3,
+   "prompt_tokens": 7789
+  },
+  {
+   "case_id": "qm1_028",
+   "sec": 43.61,
+   "out_tokens": 2203,
+   "tok_per_s": 50.5,
+   "prompt_tokens": 8342
+  },
+  {
+   "case_id": "qm1_047",
+   "sec": 52.14,
+   "out_tokens": 2603,
+   "tok_per_s": 49.9,
+   "prompt_tokens": 10261
+  },
+  {
+   "case_id": "qm1_055",
+   "sec": 50.28,
+   "out_tokens": 2535,
+   "tok_per_s": 50.4,
+   "prompt_tokens": 8714
+  },
+  {
+   "case_id": "qm1_058",
+   "sec": 25.84,
+   "out_tokens": 1269,
+   "tok_per_s": 49.1,
+   "prompt_tokens": 10706
+  },
+  {
+   "case_id": "qm2_022",
+   "sec": 41.43,
+   "out_tokens": 2016,
+   "tok_per_s": 48.7,
+   "prompt_tokens": 15014
+  }
+ ]
+}

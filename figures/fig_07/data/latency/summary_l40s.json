@@ -1,0 +1,295 @@
+{
+ "note": "Seconds per incident on one L40S: the first 10 evaluation incidents of each dataset (telecom, bank, market) sent one at a time (one response, temperature 0.6, up to 6,144 new tokens), model loading excluded (code/latency_probe.py). trained = the Qwen3 size with its adapter applied by vLLM (bf16, the evaluated NudgeRCA); trained-int4 = GPTQ W4A16 of the adapter merged in float32.",
+ "models": {
+  "0.6B-trained": {
+   "telecom": {
+    "s_per_incident": 3.37,
+    "median_s": 2.38,
+    "p95_s": 10.66,
+    "tokens_per_s": 140.2,
+    "output_tokens": 385,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 3.33,
+    "median_s": 2.91,
+    "p95_s": 8.38,
+    "tokens_per_s": 144.5,
+    "output_tokens": 484,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 6.17,
+    "median_s": 4.6,
+    "p95_s": 19.86,
+    "tokens_per_s": 127.5,
+    "output_tokens": 785,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 4.29
+   }
+  },
+  "0.6B-trained-int4": {
+   "telecom": {
+    "s_per_incident": 1.21,
+    "median_s": 1.27,
+    "p95_s": 1.46,
+    "tokens_per_s": 251.0,
+    "output_tokens": 304,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 1.74,
+    "median_s": 1.52,
+    "p95_s": 3.21,
+    "tokens_per_s": 252.0,
+    "output_tokens": 439,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 3.35,
+    "median_s": 2.69,
+    "p95_s": 6.48,
+    "tokens_per_s": 197.1,
+    "output_tokens": 664,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 2.1
+   }
+  },
+  "1.7B-trained": {
+   "telecom": {
+    "s_per_incident": 13.46,
+    "median_s": 9.77,
+    "p95_s": 36.24,
+    "tokens_per_s": 101.3,
+    "output_tokens": 1354,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 11.78,
+    "median_s": 9.83,
+    "p95_s": 32.37,
+    "tokens_per_s": 100.0,
+    "output_tokens": 1180,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 17.62,
+    "median_s": 18.94,
+    "p95_s": 30.7,
+    "tokens_per_s": 90.5,
+    "output_tokens": 1582,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 14.29
+   }
+  },
+  "1.7B-trained-int4": {
+   "telecom": {
+    "s_per_incident": 7.52,
+    "median_s": 5.72,
+    "p95_s": 17.29,
+    "tokens_per_s": 210.0,
+    "output_tokens": 1568,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 8.09,
+    "median_s": 7.74,
+    "p95_s": 12.15,
+    "tokens_per_s": 209.0,
+    "output_tokens": 1690,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 10.82,
+    "median_s": 9.86,
+    "p95_s": 19.01,
+    "tokens_per_s": 170.1,
+    "output_tokens": 1844,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 8.81
+   }
+  },
+  "trained": {
+   "telecom": {
+    "s_per_incident": 50.32,
+    "median_s": 46.66,
+    "p95_s": 78.65,
+    "tokens_per_s": 56.5,
+    "output_tokens": 2836,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 44.83,
+    "median_s": 45.17,
+    "p95_s": 61.41,
+    "tokens_per_s": 56.3,
+    "output_tokens": 2524,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 36.88,
+    "median_s": 23.75,
+    "p95_s": 94.98,
+    "tokens_per_s": 51.5,
+    "output_tokens": 1913,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 44.01
+   }
+  },
+  "trained-int4": {
+   "telecom": {
+    "s_per_incident": 24.49,
+    "median_s": 23.29,
+    "p95_s": 39.78,
+    "tokens_per_s": 140.2,
+    "output_tokens": 3411,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 19.22,
+    "median_s": 17.41,
+    "p95_s": 45.67,
+    "tokens_per_s": 140.2,
+    "output_tokens": 2668,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 16.29,
+    "median_s": 15.19,
+    "p95_s": 28.91,
+    "tokens_per_s": 115.5,
+    "output_tokens": 1898,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 20.0
+   }
+  },
+  "8B-trained": {
+   "telecom": {
+    "s_per_incident": 73.28,
+    "median_s": 76.1,
+    "p95_s": 113.19,
+    "tokens_per_s": 36.4,
+    "output_tokens": 2660,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 82.55,
+    "median_s": 87.06,
+    "p95_s": 140.13,
+    "tokens_per_s": 36.2,
+    "output_tokens": 2991,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 58.59,
+    "median_s": 59.58,
+    "p95_s": 81.54,
+    "tokens_per_s": 34.2,
+    "output_tokens": 2007,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 71.47
+   }
+  },
+  "8B-trained-int4": {
+   "telecom": {
+    "s_per_incident": 22.18,
+    "median_s": 25.55,
+    "p95_s": 29.73,
+    "tokens_per_s": 101.0,
+    "output_tokens": 2234,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 27.19,
+    "median_s": 26.24,
+    "p95_s": 44.83,
+    "tokens_per_s": 99.9,
+    "output_tokens": 2710,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 18.56,
+    "median_s": 19.14,
+    "p95_s": 28.06,
+    "tokens_per_s": 85.1,
+    "output_tokens": 1604,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 22.64
+   }
+  },
+  "14B-trained": {
+   "telecom": {
+    "s_per_incident": 59.17,
+    "median_s": 49.23,
+    "p95_s": 119.98,
+    "tokens_per_s": 21.8,
+    "output_tokens": 1288,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 52.47,
+    "median_s": 37.24,
+    "p95_s": 139.06,
+    "tokens_per_s": 21.6,
+    "output_tokens": 1139,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 55.94,
+    "median_s": 53.52,
+    "p95_s": 97.44,
+    "tokens_per_s": 20.4,
+    "output_tokens": 1154,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 55.86
+   }
+  },
+  "14B-trained-int4": {
+   "telecom": {
+    "s_per_incident": 23.47,
+    "median_s": 18.58,
+    "p95_s": 42.9,
+    "tokens_per_s": 66.4,
+    "output_tokens": 1559,
+    "n": 10
+   },
+   "bank": {
+    "s_per_incident": 26.16,
+    "median_s": 21.09,
+    "p95_s": 55.63,
+    "tokens_per_s": 65.9,
+    "output_tokens": 1728,
+    "n": 10
+   },
+   "market": {
+    "s_per_incident": 26.17,
+    "median_s": 24.84,
+    "p95_s": 43.38,
+    "tokens_per_s": 57.4,
+    "output_tokens": 1524,
+    "n": 10
+   },
+   "mean_three_datasets": {
+    "s_per_incident": 25.27
+   }
+  }
+ }
+}

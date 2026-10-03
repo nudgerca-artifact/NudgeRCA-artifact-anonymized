@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+figures/fig_02/work/
+.DS_Store

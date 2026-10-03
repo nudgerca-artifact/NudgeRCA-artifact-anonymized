@@ -1,0 +1,530 @@
+{
+ "4B|Telecom|base": {
+  "S": 28.0,
+  "P": 45.0,
+  "c": 33.8,
+  "r": 44.6,
+  "t": 54.8,
+  "src": "nudgerca/inference/outputs/base/telecom.jsonl"
+ },
+ "4B|Telecom|ours": {
+  "S": 39.3,
+  "P": 55.3,
+  "c": 37.5,
+  "r": 66.1,
+  "t": 63.5,
+  "src": "nudgerca/inference/outputs/ours/telecom.jsonl"
+ },
+ "4B|Bank|base": {
+  "S": 27.9,
+  "P": 36.6,
+  "c": 46.5,
+  "r": 35.2,
+  "t": 40.0,
+  "src": "nudgerca/inference/outputs/base/bank.jsonl"
+ },
+ "4B|Bank|ours": {
+  "S": 48.7,
+  "P": 55.5,
+  "c": 60.0,
+  "r": 59.8,
+  "t": 52.9,
+  "src": "nudgerca/inference/outputs/ours/bank.jsonl"
+ },
+ "4B|Market|base": {
+  "S": 4.0,
+  "P": 14.4,
+  "c": 19.6,
+  "r": 24.6,
+  "t": 33.1,
+  "src": "nudgerca/inference/outputs/base/market.jsonl"
+ },
+ "4B|Market|ours": {
+  "S": 11.9,
+  "P": 24.3,
+  "c": 30.7,
+  "r": 26.1,
+  "t": 49.6,
+  "src": "nudgerca/inference/outputs/ours/market.jsonl"
+ },
+ "0.6B|Telecom|prior_base": {
+  "S": 5.4,
+  "P": 7.7,
+  "c": 0.0,
+  "r": 15.2,
+  "t": 1.0,
+  "src": "baselines/prior-preprocessing/results/qwen3-0.6b/base__telecom.jsonl"
+ },
+ "0.6B|Bank|prior_base": {
+  "S": 4.2,
+  "P": 8.4,
+  "c": 10.5,
+  "r": 15.2,
+  "t": 1.7,
+  "src": "baselines/prior-preprocessing/results/qwen3-0.6b/base__bank.jsonl"
+ },
+ "0.6B|Market|prior_base": {
+  "S": 1.2,
+  "P": 5.6,
+  "c": 6.1,
+  "r": 10.0,
+  "t": 13.3,
+  "src": "baselines/prior-preprocessing/results/qwen3-0.6b/base__market.jsonl"
+ },
+ "1.7B|Telecom|prior_base": {
+  "S": 3.6,
+  "P": 6.1,
+  "c": 0.0,
+  "r": 14.3,
+  "t": 0.0,
+  "src": "baselines/prior-preprocessing/results/qwen3-1.7b/base__telecom.jsonl"
+ },
+ "1.7B|Bank|prior_base": {
+  "S": 4.2,
+  "P": 7.6,
+  "c": 8.5,
+  "r": 6.8,
+  "t": 8.3,
+  "src": "baselines/prior-preprocessing/results/qwen3-1.7b/base__bank.jsonl"
+ },
+ "1.7B|Market|prior_base": {
+  "S": 2.3,
+  "P": 9.1,
+  "c": 15.0,
+  "r": 9.6,
+  "t": 21.0,
+  "src": "baselines/prior-preprocessing/results/qwen3-1.7b/base__market.jsonl"
+ },
+ "4B|Telecom|prior_base": {
+  "S": 6.5,
+  "P": 15.0,
+  "c": 22.5,
+  "r": 18.8,
+  "t": 5.8,
+  "src": "baselines/prior-preprocessing/results/qwen3-4b/base__telecom.jsonl"
+ },
+ "4B|Bank|prior_base": {
+  "S": 2.5,
+  "P": 7.9,
+  "c": 11.5,
+  "r": 9.1,
+  "t": 10.0,
+  "src": "baselines/prior-preprocessing/results/qwen3-4b/base__bank.jsonl"
+ },
+ "4B|Market|prior_base": {
+  "S": 3.8,
+  "P": 12.9,
+  "c": 16.4,
+  "r": 12.5,
+  "t": 29.4,
+  "src": "baselines/prior-preprocessing/results/qwen3-4b/base__market.jsonl"
+ },
+ "8B|Telecom|prior_base": {
+  "S": 8.3,
+  "P": 17.9,
+  "c": 26.2,
+  "r": 19.6,
+  "t": 8.7,
+  "src": "baselines/prior-preprocessing/results/qwen3-8b/base__telecom.jsonl"
+ },
+ "0.6B|Telecom|base": {
+  "S": 6.5,
+  "P": 21.7,
+  "c": 42.5,
+  "r": 27.7,
+  "t": 8.7,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/base/telecom.jsonl"
+ },
+ "0.6B|Telecom|ours": {
+  "S": 11.9,
+  "P": 30.8,
+  "c": 50.0,
+  "r": 33.9,
+  "t": 18.3,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/ours/telecom.jsonl"
+ },
+ "0.6B|Bank|base": {
+  "S": 21.0,
+  "P": 31.2,
+  "c": 48.0,
+  "r": 32.2,
+  "t": 23.8,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/base/bank.jsonl"
+ },
+ "0.6B|Bank|ours": {
+  "S": 38.4,
+  "P": 48.3,
+  "c": 68.0,
+  "r": 48.9,
+  "t": 46.7,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/ours/bank.jsonl"
+ },
+ "0.6B|Market|base": {
+  "S": 1.7,
+  "P": 8.9,
+  "c": 11.8,
+  "r": 18.9,
+  "t": 16.9,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/base/market.jsonl"
+ },
+ "0.6B|Market|ours": {
+  "S": 7.5,
+  "P": 21.5,
+  "c": 33.6,
+  "r": 18.9,
+  "t": 46.4,
+  "src": "figures/fig_07/data/qwen3-0.6b/outputs/ours/market.jsonl"
+ },
+ "1.7B|Telecom|base": {
+  "S": 23.8,
+  "P": 36.3,
+  "c": 28.7,
+  "r": 47.3,
+  "t": 33.7,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/base/telecom.jsonl"
+ },
+ "1.7B|Telecom|ours": {
+  "S": 21.4,
+  "P": 34.5,
+  "c": 25.0,
+  "r": 53.6,
+  "t": 26.0,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/ours/telecom.jsonl"
+ },
+ "1.7B|Bank|base": {
+  "S": 24.8,
+  "P": 35.2,
+  "c": 51.5,
+  "r": 25.8,
+  "t": 38.3,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/base/bank.jsonl"
+ },
+ "1.7B|Bank|ours": {
+  "S": 30.6,
+  "P": 42.0,
+  "c": 63.5,
+  "r": 32.6,
+  "t": 43.8,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/ours/bank.jsonl"
+ },
+ "1.7B|Market|base": {
+  "S": 4.2,
+  "P": 15.4,
+  "c": 23.9,
+  "r": 17.9,
+  "t": 29.8,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/base/market.jsonl"
+ },
+ "1.7B|Market|ours": {
+  "S": 8.5,
+  "P": 23.4,
+  "c": 32.1,
+  "r": 22.5,
+  "t": 44.0,
+  "src": "figures/fig_07/data/qwen3-1.7b/outputs/ours/market.jsonl"
+ },
+ "8B|Telecom|base": {
+  "S": 27.4,
+  "P": 45.7,
+  "c": 43.8,
+  "r": 53.6,
+  "t": 49.0,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/base/telecom.jsonl"
+ },
+ "8B|Telecom|ours": {
+  "S": 29.2,
+  "P": 45.3,
+  "c": 30.0,
+  "r": 52.7,
+  "t": 51.9,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/ours/telecom.jsonl"
+ },
+ "8B|Bank|base": {
+  "S": 22.5,
+  "P": 30.4,
+  "c": 42.5,
+  "r": 32.6,
+  "t": 31.2,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/base/bank.jsonl"
+ },
+ "8B|Bank|ours": {
+  "S": 41.3,
+  "P": 48.8,
+  "c": 68.0,
+  "r": 54.9,
+  "t": 44.2,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/ours/bank.jsonl"
+ },
+ "8B|Bank|prior_base": {
+  "S": 0.7,
+  "P": 6.4,
+  "c": 9.0,
+  "r": 11.4,
+  "t": 7.5,
+  "src": "baselines/prior-preprocessing/results/qwen3-8b/base__bank.jsonl"
+ },
+ "8B|Market|base": {
+  "S": 5.6,
+  "P": 17.2,
+  "c": 23.2,
+  "r": 20.7,
+  "t": 41.1,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/base/market.jsonl"
+ },
+ "8B|Market|ours": {
+  "S": 7.3,
+  "P": 19.7,
+  "c": 30.4,
+  "r": 21.1,
+  "t": 48.4,
+  "src": "figures/fig_07/data/qwen3-8b/outputs/ours/market.jsonl"
+ },
+ "8B|Market|prior_base": {
+  "S": 2.3,
+  "P": 11.9,
+  "c": 17.1,
+  "r": 11.8,
+  "t": 28.6,
+  "src": "baselines/prior-preprocessing/results/qwen3-8b/base__market.jsonl"
+ },
+ "14B|Telecom|base": {
+  "S": 32.1,
+  "P": 49.0,
+  "c": 57.5,
+  "r": 61.6,
+  "t": 30.8,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/base/telecom.jsonl"
+ },
+ "14B|Telecom|ours": {
+  "S": 39.3,
+  "P": 54.0,
+  "c": 56.2,
+  "r": 63.4,
+  "t": 45.2,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/ours/telecom.jsonl"
+ },
+ "14B|Telecom|prior_base": {
+  "S": 6.5,
+  "P": 14.4,
+  "c": 15.0,
+  "r": 22.3,
+  "t": 4.8,
+  "src": "baselines/prior-preprocessing/results/qwen3-14b/base__telecom.jsonl"
+ },
+ "14B|Bank|base": {
+  "S": 42.0,
+  "P": 48.9,
+  "c": 65.0,
+  "r": 52.7,
+  "t": 46.7,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/base/bank.jsonl"
+ },
+ "14B|Bank|ours": {
+  "S": 45.8,
+  "P": 52.2,
+  "c": 68.5,
+  "r": 57.6,
+  "t": 47.5,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/ours/bank.jsonl"
+ },
+ "14B|Bank|prior_base": {
+  "S": 3.8,
+  "P": 9.2,
+  "c": 8.5,
+  "r": 11.4,
+  "t": 13.8,
+  "src": "baselines/prior-preprocessing/results/qwen3-14b/base__bank.jsonl"
+ },
+ "14B|Market|base": {
+  "S": 4.6,
+  "P": 16.8,
+  "c": 25.0,
+  "r": 23.2,
+  "t": 46.4,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/base/market.jsonl"
+ },
+ "14B|Market|ours": {
+  "S": 17.3,
+  "P": 30.5,
+  "c": 42.9,
+  "r": 30.7,
+  "t": 62.5,
+  "src": "figures/fig_07/data/qwen3-14b/outputs/ours/market.jsonl"
+ },
+ "14B|Market|prior_base": {
+  "S": 3.8,
+  "P": 12.2,
+  "c": 19.3,
+  "r": 10.0,
+  "t": 30.6,
+  "src": "baselines/prior-preprocessing/results/qwen3-14b/base__market.jsonl"
+ },
+ "Opus5|Telecom|ours_input": {
+  "S": 45.2,
+  "P": 56.7,
+  "c": 56.2,
+  "r": 64.3,
+  "t": 53.8,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/ours-prep/telecom.jsonl"
+ },
+ "Opus5|Telecom|prior_input": {
+  "S": 21.4,
+  "P": 35.4,
+  "c": 30.0,
+  "r": 14.3,
+  "t": 56.7,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/prior-prep/telecom.jsonl"
+ },
+ "4B-Int4|Telecom|ours": {
+  "S": 31.0,
+  "P": 48.2,
+  "c": 35.0,
+  "r": 61.6,
+  "t": 52.9,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-4b/telecom.jsonl"
+ },
+ "Opus5|Bank|ours_input": {
+  "S": 42.0,
+  "P": 46.1,
+  "c": 58.5,
+  "r": 52.3,
+  "t": 40.8,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/ours-prep/bank.jsonl"
+ },
+ "Opus5|Bank|prior_input": {
+  "S": 3.6,
+  "P": 10.6,
+  "c": 8.0,
+  "r": 12.1,
+  "t": 18.3,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/prior-prep/bank.jsonl"
+ },
+ "4B-Int4|Bank|ours": {
+  "S": 49.3,
+  "P": 56.7,
+  "c": 67.5,
+  "r": 63.3,
+  "t": 54.2,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-4b/bank.jsonl"
+ },
+ "Opus5|Market|ours_input": {
+  "S": 26.7,
+  "P": 42.8,
+  "c": 42.9,
+  "r": 49.3,
+  "t": 72.6,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/ours-prep/market.jsonl"
+ },
+ "Opus5|Market|prior_input": {
+  "S": 6.5,
+  "P": 20.7,
+  "c": 32.5,
+  "r": 24.3,
+  "t": 48.0,
+  "src": "figures/section_2/data/api-models/claude-opus-5/outputs/prior-prep/market.jsonl"
+ },
+ "4B-Int4|Market|ours": {
+  "S": 14.0,
+  "P": 27.9,
+  "c": 37.5,
+  "r": 30.4,
+  "t": 53.2,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-4b/market.jsonl"
+ },
+ "0.6B-Int4|Telecom|ours": {
+  "S": 6.5,
+  "P": 25.7,
+  "c": 46.2,
+  "r": 29.5,
+  "t": 15.4,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-0.6b/telecom.jsonl"
+ },
+ "0.6B-Int4|Bank|ours": {
+  "S": 35.7,
+  "P": 46.2,
+  "c": 68.0,
+  "r": 42.4,
+  "t": 44.6,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-0.6b/bank.jsonl"
+ },
+ "0.6B-Int4|Market|ours": {
+  "S": 5.6,
+  "P": 18.0,
+  "c": 31.1,
+  "r": 12.5,
+  "t": 40.7,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-0.6b/market.jsonl"
+ },
+ "1.7B-Int4|Telecom|ours": {
+  "S": 20.8,
+  "P": 33.0,
+  "c": 32.5,
+  "r": 52.7,
+  "t": 19.2,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-1.7b/telecom.jsonl"
+ },
+ "1.7B-Int4|Bank|ours": {
+  "S": 30.1,
+  "P": 41.3,
+  "c": 67.0,
+  "r": 32.6,
+  "t": 38.3,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-1.7b/bank.jsonl"
+ },
+ "1.7B-Int4|Market|ours": {
+  "S": 8.5,
+  "P": 21.8,
+  "c": 26.4,
+  "r": 22.1,
+  "t": 38.7,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-1.7b/market.jsonl"
+ },
+ "8B-Int4|Telecom|ours": {
+  "S": 28.0,
+  "P": 45.1,
+  "c": 27.5,
+  "r": 50.9,
+  "t": 60.6,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-8b/telecom.jsonl"
+ },
+ "8B-Int4|Bank|ours": {
+  "S": 41.1,
+  "P": 47.8,
+  "c": 65.0,
+  "r": 53.8,
+  "t": 45.4,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-8b/bank.jsonl"
+ },
+ "8B-Int4|Market|ours": {
+  "S": 8.5,
+  "P": 22.1,
+  "c": 30.7,
+  "r": 22.5,
+  "t": 51.6,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-8b/market.jsonl"
+ },
+ "14B-Int4|Telecom|ours": {
+  "S": 38.7,
+  "P": 52.9,
+  "c": 55.0,
+  "r": 58.9,
+  "t": 49.0,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-14b/telecom.jsonl"
+ },
+ "14B-Int4|Bank|ours": {
+  "S": 44.0,
+  "P": 51.7,
+  "c": 68.5,
+  "r": 55.3,
+  "t": 48.3,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-14b/bank.jsonl"
+ },
+ "14B-Int4|Market|ours": {
+  "S": 19.4,
+  "P": 35.0,
+  "c": 49.6,
+  "r": 31.4,
+  "t": 69.8,
+  "src": "figures/fig_07/data/int4/outputs/qwen3-14b/market.jsonl"
+ }
+}

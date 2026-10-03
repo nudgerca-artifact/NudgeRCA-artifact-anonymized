@@ -1,0 +1,2 @@
+[rq5-bank-HD4] Strict 40.6% | Partial 48.2% (samples 448, cases 56)
+  fields: component 53.5% | reason 62.1% | time 40.4%  difficulty: easy S:40%/P:42% | hard S:4%/P:14% | middle S:46%/P:59%

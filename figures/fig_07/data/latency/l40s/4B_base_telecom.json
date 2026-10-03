@@ -1,0 +1,152 @@
+{
+ "model": "Qwen/Qwen3-4B",
+ "lora": null,
+ "n": 20,
+ "sec_mean": 31.86,
+ "sec_median": 28.55,
+ "tok_per_s_mean": 71.1,
+ "out_tokens_mean": 2262,
+ "gpu_after": "42213 MiB, 46068 MiB, NVIDIA L40S",
+ "records": [
+  {
+   "case_id": "qt_009",
+   "sec": 65.25,
+   "out_tokens": 4628,
+   "tok_per_s": 70.9,
+   "prompt_tokens": 1376
+  },
+  {
+   "case_id": "qt_012",
+   "sec": 22.17,
+   "out_tokens": 1584,
+   "tok_per_s": 71.5,
+   "prompt_tokens": 2495
+  },
+  {
+   "case_id": "qt_035",
+   "sec": 29.92,
+   "out_tokens": 2102,
+   "tok_per_s": 70.3,
+   "prompt_tokens": 3350
+  },
+  {
+   "case_id": "qt_040",
+   "sec": 31.97,
+   "out_tokens": 2284,
+   "tok_per_s": 71.4,
+   "prompt_tokens": 2423
+  },
+  {
+   "case_id": "qt_044",
+   "sec": 49.96,
+   "out_tokens": 3528,
+   "tok_per_s": 70.6,
+   "prompt_tokens": 2628
+  },
+  {
+   "case_id": "qt_050",
+   "sec": 39.18,
+   "out_tokens": 2800,
+   "tok_per_s": 71.5,
+   "prompt_tokens": 2188
+  },
+  {
+   "case_id": "qt_003",
+   "sec": 41.53,
+   "out_tokens": 2928,
+   "tok_per_s": 70.5,
+   "prompt_tokens": 2938
+  },
+  {
+   "case_id": "qt_005",
+   "sec": 26.95,
+   "out_tokens": 1939,
+   "tok_per_s": 71.9,
+   "prompt_tokens": 2120
+  },
+  {
+   "case_id": "qt_006",
+   "sec": 34.07,
+   "out_tokens": 2466,
+   "tok_per_s": 72.4,
+   "prompt_tokens": 1586
+  },
+  {
+   "case_id": "qt_011",
+   "sec": 20.97,
+   "out_tokens": 1507,
+   "tok_per_s": 71.9,
+   "prompt_tokens": 2328
+  },
+  {
+   "case_id": "qt_027",
+   "sec": 25.02,
+   "out_tokens": 1783,
+   "tok_per_s": 71.3,
+   "prompt_tokens": 2759
+  },
+  {
+   "case_id": "qt_039",
+   "sec": 14.08,
+   "out_tokens": 1024,
+   "tok_per_s": 72.7,
+   "prompt_tokens": 1767
+  },
+  {
+   "case_id": "qt_028",
+   "sec": 27.17,
+   "out_tokens": 1917,
+   "tok_per_s": 70.6,
+   "prompt_tokens": 2878
+  },
+  {
+   "case_id": "qt_021",
+   "sec": 19.86,
+   "out_tokens": 1404,
+   "tok_per_s": 70.7,
+   "prompt_tokens": 2213
+  },
+  {
+   "case_id": "qt_024",
+   "sec": 18.3,
+   "out_tokens": 1293,
+   "tok_per_s": 70.7,
+   "prompt_tokens": 3161
+  },
+  {
+   "case_id": "qt_020",
+   "sec": 36.26,
+   "out_tokens": 2591,
+   "tok_per_s": 71.5,
+   "prompt_tokens": 1916
+  },
+  {
+   "case_id": "qt_031",
+   "sec": 26.74,
+   "out_tokens": 1919,
+   "tok_per_s": 71.8,
+   "prompt_tokens": 1850
+  },
+  {
+   "case_id": "qt_029",
+   "sec": 25.79,
+   "out_tokens": 1818,
+   "tok_per_s": 70.5,
+   "prompt_tokens": 2915
+  },
+  {
+   "case_id": "qt_041",
+   "sec": 47.59,
+   "out_tokens": 3345,
+   "tok_per_s": 70.3,
+   "prompt_tokens": 2251
+  },
+  {
+   "case_id": "qt_048",
+   "sec": 34.43,
+   "out_tokens": 2377,
+   "tok_per_s": 69.0,
+   "prompt_tokens": 2635
+  }
+ ]
+}

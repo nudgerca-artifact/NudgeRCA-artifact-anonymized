@@ -1,0 +1,39 @@
+{
+ "Gemma4-E4B|Telecom|base": {
+  "S": 38.7,
+  "P": 56.0
+ },
+ "Gemma4-E4B|Bank|base": {
+  "S": 15.4,
+  "P": 24.4
+ },
+ "Gemma4-E4B|Market|base": {
+  "S": 5.6,
+  "P": 15.6
+ },
+ "Gemma4-E4B|Telecom|ours": {
+  "S": 42.3,
+  "P": 58.2
+ },
+ "Gemma4-E4B|Bank|ours": {
+  "S": 36.6,
+  "P": 46.5
+ },
+ "Gemma4-E4B|Market|ours": {
+  "S": 12.1,
+  "P": 27.4
+ },
+ "_note": "Gemma 4 E4B, same evaluation inputs as the Qwen3 entries (bank: the render with trace-summary and log-template blocks), 8 samples per incident. base/ours: float32 with the adapter merged in float32. -Int4: the float32-merged weights quantized to GPTQ W4A16 (group size 128, every linear layer of the language model, calibration on the 198 training-pool prompts; code/run_int4_gemma4.sh), evaluated in bf16.",
+ "Gemma4-E4B-Int4|Telecom|ours": {
+  "S": 39.3,
+  "P": 56.5
+ },
+ "Gemma4-E4B-Int4|Bank|ours": {
+  "S": 37.5,
+  "P": 47.2
+ },
+ "Gemma4-E4B-Int4|Market|ours": {
+  "S": 10.6,
+  "P": 23.8
+ }
+}

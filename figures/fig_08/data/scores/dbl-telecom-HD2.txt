@@ -1,0 +1,2 @@
+[dbl-telecom-HD2] Strict 36.9% | Partial 50.1% (samples 168, cases 21)
+  fields: component 38.8% | reason 63.4% | time 45.2%  difficulty: easy S:49%/P:49% | hard S:9%/P:43% | middle S:36%/P:55%

@@ -1,0 +1,637 @@
+{
+"OSLinux-NTP_197.30.1.67_NtpServerTimeOffset": {
+"conc": 0.407,
+"family": "apache",
+"n": 194
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKTps": {
+"conc": 0.257,
+"family": "IG",
+"n": 140
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKPercentBusy": {
+"conc": 0.211,
+"family": "IG",
+"n": 133
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKBps": {
+"conc": 0.217,
+"family": "Tomcat",
+"n": 189
+},
+"OSLinux-CPU_CPU-0_SingleCpuidle": {
+"conc": 0.428,
+"family": "Tomcat",
+"n": 180
+},
+"OSLinux-CPU_CPU-1_SingleCpuUtil": {
+"conc": 0.78,
+"family": "Tomcat",
+"n": 132
+},
+"OSLinux-CPU_CPU-3_SingleCpuidle": {
+"conc": 0.475,
+"family": "Tomcat",
+"n": 99
+},
+"OSLinux-CPU_CPU-2_SingleCpuUtil": {
+"conc": 0.368,
+"family": "Tomcat",
+"n": 152
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKReadWrite": {
+"conc": 0.232,
+"family": "apache",
+"n": 125
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKBps": {
+"conc": 0.296,
+"family": "Tomcat",
+"n": 199
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKWrite": {
+"conc": 0.235,
+"family": "IG",
+"n": 166
+},
+"OSLinux-CPU_CPU-0_SingleCpuUtil": {
+"conc": 0.411,
+"family": "Tomcat",
+"n": 180
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKRTps": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 34
+},
+"OSLinux-CPU_CPU-1_SingleCpuidle": {
+"conc": 0.807,
+"family": "Tomcat",
+"n": 150
+},
+"OSLinux-CPU_CPU-2_SingleCpuidle": {
+"conc": 0.356,
+"family": "Tomcat",
+"n": 191
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKPercentBusy": {
+"conc": 0.3,
+"family": "Tomcat",
+"n": 150
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKRead": {
+"conc": 0.329,
+"family": "Tomcat",
+"n": 73
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKTps": {
+"conc": 0.652,
+"family": "Tomcat",
+"n": 132
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKRTps": {
+"conc": 0.315,
+"family": "Tomcat",
+"n": 73
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sda_DSKWTps": {
+"conc": 0.213,
+"family": "MG",
+"n": 178
+},
+"OSLinux-CPU_CPU_CPULoad": {
+"conc": 0.279,
+"family": "Redis",
+"n": 86
+},
+"Mysql-MySQL_3306_Max trx rows locked": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 28
+},
+"OSLinux-CPU_CPU-3_SingleCpuUtil": {
+"conc": 0.478,
+"family": "Tomcat",
+"n": 92
+},
+"OSLinux-OSLinux_NETWORK_ens160_NETPacketsOut": {
+"conc": 0.386,
+"family": "Redis",
+"n": 57
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKRTps": {
+"conc": 0.381,
+"family": "Tomcat",
+"n": 63
+},
+"OSLinux-OSLinux_NETWORK_NETWORK_TCP-FIN-WAIT": {
+"conc": 0.407,
+"family": "MG",
+"n": 86
+},
+"Mysql-MySQL_3306_Innodb os log pending fsyncs": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 26
+},
+"OSLinux-OSLinux_NETWORK_NETWORK_TCP-CLOSE-WAIT": {
+"conc": 0.327,
+"family": "MG",
+"n": 49
+},
+"OSLinux-OSLinux_NETWORK_ens160_NETKBTotalPerSec": {
+"conc": 0.379,
+"family": "MG",
+"n": 116
+},
+"JVM-Operating System_7778_JVM_JVM_CPULoad": {
+"conc": 1.0,
+"family": "IG",
+"n": 32
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKRead": {
+"conc": 0.387,
+"family": "Tomcat",
+"n": 62
+},
+"Mysql-MySQL_3306_Innodb data pending fsyncs": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 31
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKWTps": {
+"conc": 0.416,
+"family": "Tomcat",
+"n": 77
+},
+"JVM-Operating System_7779_JVM_JVM_CPULoad": {
+"conc": 1.0,
+"family": "MG",
+"n": 22
+},
+"OSLinux-OSLinux_PROCESS_zabbix-zabbix_agentd_PROCPPCPUPerc": {
+"conc": 0.256,
+"family": "Redis",
+"n": 86
+},
+"Mysql-MySQL_3306_Innodb buffer pool pages misc": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Tomcat-MEMORY_7441-MEMORY_JVMUsedMemory": {
+"conc": 1.0,
+"family": "Tomcat",
+"n": 138
+},
+"OSLinux-NTP_197.30.1.68_NtpServerTimeOffset": {
+"conc": 0.487,
+"family": "Redis",
+"n": 39
+},
+"OSLinux-OSLinux_NETWORK_ens160_NETBandwidthUtil": {
+"conc": 0.331,
+"family": "MG",
+"n": 130
+},
+"OSLinux-OSLinux_PROCESS_apache_10001_PROCPPCount": {
+"conc": 1.0,
+"family": "apache",
+"n": 13
+},
+"Mysql-MySQL_3306_max trx lock memory bytes": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 33
+},
+"JVM-Memory_7779_JVM_Memory_HeapMemoryUsed": {
+"conc": 1.0,
+"family": "MG",
+"n": 7
+},
+"Mysql-MySQL_3306_MaxTrxRowsModified": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 26
+},
+"JVM-Threads_7779_JVM_ThreadCount_Threads": {
+"conc": 1.0,
+"family": "MG",
+"n": 1
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKBps": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKPercentBusy": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 27
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKWrite": {
+"conc": 0.542,
+"family": "MG",
+"n": 59
+},
+"Tomcat-MEMORY_7441-MEMORY_JVMMemoryUsedPercent": {
+"conc": 1.0,
+"family": "Tomcat",
+"n": 75
+},
+"OSLinux-NTP_40.2.208.64_NtpServerTimeOffset": {
+"conc": 1.0,
+"family": "Redis",
+"n": 10
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKRead": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 31
+},
+"Mysql-MySQL_3306_LongestTrxActiveTime": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 20
+},
+"OSLinux-OSLinux_NETWORK_ens160_NETPacketsIn": {
+"conc": 0.431,
+"family": "Redis",
+"n": 51
+},
+"OSLinux-OSLinux_MEMORY_MEMORY_NoCacheMemPerc": {
+"conc": 0.667,
+"family": "Redis",
+"n": 3
+},
+"Mysql-MySQL_3306_Handler Read Key": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 5
+},
+"JVM-Memory_7778_JVM_Memory_HeapMemoryUsed": {
+"conc": 1.0,
+"family": "IG",
+"n": 26
+},
+"OSLinux-OSLinux_MEMORY_MEMORY_MEMFreeMem": {
+"conc": 0.667,
+"family": "Redis",
+"n": 3
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdb_DSKReadWrite": {
+"conc": 0.347,
+"family": "MG",
+"n": 95
+},
+"redis-Redis_6379_Redis  (instantaneous_ops_per_sec)": {
+"conc": 1.0,
+"family": "Redis",
+"n": 30
+},
+"Mysql-MySQL_3306_CurrentSQLMaxRunningTime": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 23
+},
+"Mysql-MySQL_3306_Innodb pages read": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 2
+},
+"JVM-Threads_7778_JVM_ThreadCount_Threads": {
+"conc": 1.0,
+"family": "IG",
+"n": 7
+},
+"Mysql-MySQL_3306_Innodb dblwr writes": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"Mysql-MySQL_3306_Innodb pages written": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"OSLinux-CPU_CPU_CPUCpuUtil": {
+"conc": 0.308,
+"family": "Redis",
+"n": 13
+},
+"JVM-Memory_7778_JVM_Memory_HeapMemoryUsage": {
+"conc": 1.0,
+"family": "IG",
+"n": 25
+},
+"Mysql-MySQL_3306_Innodb data pending writes": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 11
+},
+"OSLinux-CPU_CPU_CPUWio": {
+"conc": 0.23,
+"family": "IG",
+"n": 61
+},
+"Tomcat-Threads_7441-\"http-nio-8003\"_CurrentThreadsBusyThreadInfo": {
+"conc": 1.0,
+"family": "Tomcat",
+"n": 34
+},
+"Mysql-MySQL_3306_Innodb buffer pool pages dirty": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 13
+},
+"OSLinux-NTP_40.2.208.65_NtpServerTimeOffset": {
+"conc": 1.0,
+"family": "Redis",
+"n": 4
+},
+"OSLinux-CPU_CPU_CPUSysTime": {
+"conc": 0.333,
+"family": "apache",
+"n": 12
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKTps": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 8
+},
+"OSLinux-OSLinux_FILESYSTEM_-app_FSInodeUsedPercent": {
+"conc": 1.0,
+"family": "Redis",
+"n": 7
+},
+"Mysql-MySQL_3306_Handler Read Rnd": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 17
+},
+"Mysql-MySQL_3306_Handler Read Next": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 7
+},
+"Mysql-MySQL_3306_ThreadsRunning": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 5
+},
+"Mysql-MySQL_3306_Sort Range": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 8
+},
+"OSLinux-OSLinux_NETWORK_NETWORK_TotalTcpConnNum": {
+"conc": 0.5,
+"family": "IG",
+"n": 24
+},
+"Mysql-MySQL_3306_Table open cache misses": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 8
+},
+"Mysql-MySQL_3306_Innodb row lock current waits": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 6
+},
+"OSLinux-CPU_CPU_CPUUserTime": {
+"conc": 0.385,
+"family": "Redis",
+"n": 13
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKReadWrite": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 5
+},
+"JVM-Memory_7779_JVM_Memory_HeapMemoryUsage": {
+"conc": 1.0,
+"family": "MG",
+"n": 12
+},
+"Mysql-MySQL_3306_Sort Scan": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"Mysql-MySQL_3306_Table Locks Immediate": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 6
+},
+"Mysql-MySQL_3306_Connections": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"Tomcat-MEMORY_7441-MEMORY_JVMFreeMemory": {
+"conc": 1.0,
+"family": "Tomcat",
+"n": 15
+},
+"Mysql-MySQL_3306_Handler Write": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"Mysql-MySQL_3306_Opened Tables": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 6
+},
+"Mysql-MySQL_3306_Table open cache hits": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"Mysql-MySQL_3306_Innodb buffer pool pages flushed": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 7
+},
+"Mysql-MySQL_3306_Handler Read First": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"Mysql-MySQL_3306_Innodb os log written": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"redis-Redis_6379_Redis  (connected_clients)": {
+"conc": 1.0,
+"family": "Redis",
+"n": 3
+},
+"Mysql-MySQL_3306_Innodb Row Lock Time": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 15
+},
+"Mysql-MySQL_3306_Binlog Cache Use": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 2
+},
+"Mysql-MySQL_3306_Bytes Received": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 2
+},
+"Mysql-MySQL_3306_Created Tmp Tables": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 2
+},
+"redis-Redis_6379_Redis  (mem_fragmentation_ratio)": {
+"conc": 1.0,
+"family": "Redis",
+"n": 6
+},
+"Mysql-MySQL_3306_GetResponseTimeOfMysqld": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb os log pending writes": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_SlowQueries": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Handler Read Prev": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb Row Lock Waits": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 8
+},
+"redis-Redis_6379_Redis  (used_memory)": {
+"conc": 1.0,
+"family": "Redis",
+"n": 5
+},
+"Mysql-MySQL_3306_Innodb data written": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb buffer pool reads": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Aborted Clients": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 5
+},
+"Mysql-MySQL_3306_Handler Update": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb dblwr pages written": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"Tomcat-Threads_7441-\"http-nio-8003\"_CurrentThreadCountThreadInfo": {
+"conc": 1.0,
+"family": "Tomcat",
+"n": 4
+},
+"Mysql-MySQL_3306_Opened table definitions": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 4
+},
+"OSLinux-OSLinux_PROCESS_PROCESS_PROCNoZombies": {
+"conc": 1.0,
+"family": "MG",
+"n": 1
+},
+"Mysql-MySQL_3306_Rows Read": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"Mysql-MySQL_3306_Select Scan": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"redis-Redis_6379_Redis  (used_memory_rss)": {
+"conc": 1.0,
+"family": "Redis",
+"n": 1
+},
+"OSLinux-OSLinux_MEMORY_MEMORY_CacheMem": {
+"conc": 0.5,
+"family": "Tomcat",
+"n": 2
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKWrite": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Com Insert": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Handler Rollback": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 3
+},
+"Mysql-MySQL_3306_Innodb data reads": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"OSLinux-CPU_CPU_CPUidleutil": {
+"conc": 1.0,
+"family": "Redis",
+"n": 3
+},
+"OSLinux-OSLinux_FILESYSTEM_-tomcat_FSCapacity": {
+"conc": 1.0,
+"family": "IG",
+"n": 1
+},
+"Mysql-MySQL_3306_Handler Read Rnd Next": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"OSLinux-OSLinux_LOCALDISK_LOCALDISK-sdc_DSKWTps": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb log write requests": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+},
+"Mysql-MySQL_3306_Innodb buffer pool write requests": {
+"conc": 1.0,
+"family": "Mysql",
+"n": 1
+}
+}

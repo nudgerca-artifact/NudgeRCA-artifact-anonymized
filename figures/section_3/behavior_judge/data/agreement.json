@@ -1,0 +1,153 @@
+{
+ "n_jobs": 648,
+ "n_success": 90,
+ "n_failure": 558,
+ "n_disagreements": 336,
+ "n_unresolved": 0,
+ "table": {
+  "q1_scan": {
+   "label": "Examines anomalies of two or more candidates",
+   "success": [
+    1.0,
+    90
+   ],
+   "failure": [
+    1.0,
+    558
+   ],
+   "all": [
+    1.0,
+    648
+   ],
+   "agreement": 1.0
+  },
+  "q2_prop": {
+   "label": "Reasons about propagation across components",
+   "success": [
+    1.0,
+    90
+   ],
+   "failure": [
+    1.0,
+    558
+   ],
+   "all": [
+    1.0,
+    648
+   ],
+   "agreement": 1.0
+  },
+  "q3_ungrounded": {
+   "label": "Cites an observation absent from the input",
+   "success": [
+    0.7888888888888889,
+    90
+   ],
+   "failure": [
+    0.6415770609318996,
+    558
+   ],
+   "all": [
+    0.6620370370370371,
+    648
+   ],
+   "agreement": 0.8811728395061729
+  },
+  "q4_mag_rationale": {
+   "label": "Final decision rests on anomaly magnitude",
+   "success": [
+    0.8,
+    90
+   ],
+   "failure": [
+    0.7544802867383512,
+    558
+   ],
+   "all": [
+    0.7608024691358025,
+    648
+   ],
+   "agreement": 0.8966049382716049
+  },
+  "q5_causal_chain": {
+   "label": "Final decision names a causal chain between components",
+   "success": [
+    0.6,
+    90
+   ],
+   "failure": [
+    0.4211469534050179,
+    558
+   ],
+   "all": [
+    0.44598765432098764,
+    648
+   ],
+   "agreement": 0.904320987654321
+  },
+  "f_gt_considered": {
+   "label": "GT component considered as a candidate",
+   "success": [
+    1.0,
+    90
+   ],
+   "failure": [
+    0.6917562724014337,
+    558
+   ],
+   "all": [
+    0.7345679012345679,
+    648
+   ],
+   "agreement": 0.933641975308642
+  },
+  "m1_premature": {
+   "label": "Commits to the largest anomaly before comparing alternatives",
+   "success": [
+    0.0,
+    90
+   ],
+   "failure": [
+    0.012544802867383513,
+    558
+   ],
+   "all": [
+    0.010802469135802469,
+    648
+   ],
+   "agreement": 0.9922839506172839
+  },
+  "m2_self_contra": {
+   "label": "Own propagation/timing analysis points elsewhere",
+   "success": [
+    0.4444444444444444,
+    90
+   ],
+   "failure": [
+    0.7150537634408602,
+    558
+   ],
+   "all": [
+    0.6774691358024691,
+    648
+   ],
+   "agreement": 0.8765432098765432
+  },
+  "m3_stop_after_commit": {
+   "label": "Stops examining alternatives after committing",
+   "success": [
+    0.0,
+    90
+   ],
+   "failure": [
+    0.0,
+    558
+   ],
+   "all": [
+    0.0,
+    648
+   ],
+   "agreement": 0.9969135802469136
+  }
+ }
+}

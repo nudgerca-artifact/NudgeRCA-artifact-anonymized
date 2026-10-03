@@ -1,0 +1,4949 @@
+[
+ {
+  "job": "openrca_bank_1616586600_101__sc3",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 1878,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing bottlenecks affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616667180_107__sc7",
+  "uuid": "openrca_bank_1616667180_107",
+  "gt": "IG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 2071,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to crashes or slowdowns."
+ },
+ {
+  "job": "openrca_bank_1614852540_1__sc0",
+  "uuid": "openrca_bank_1614852540_1",
+  "gt": "Redis02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 2750,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate application-level resource exhaustion, directly causing performance degradation and cascading effects on downstream services."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc2",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 2932,
+  "top1_desc": "GC errors and CPU utilization spikes indicate memory pressure and resource contention, directly linked to the anomaly propagation path."
+ },
+ {
+  "job": "openrca_bank_1616675100_109__sc5",
+  "uuid": "openrca_bank_1616675100_109",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3105,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to resource contention and excessive network traffic."
+ },
+ {
+  "job": "openrca_bank_1616667180_107__sc1",
+  "uuid": "openrca_bank_1616667180_107",
+  "gt": "IG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3168,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and resource contention directly impacting application performance."
+ },
+ {
+  "job": "openrca_bank_1615270440_19__sc5",
+  "uuid": "openrca_bank_1615270440_19",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3276,
+  "top1_desc": "GC errors and high CPU idle time indicate memory pressure and resource contention, directly causing application failures."
+ },
+ {
+  "job": "openrca_bank_1615359720_27__sc6",
+  "uuid": "openrca_bank_1615359720_27",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3296,
+  "top1_desc": "GC errors and high CPU utilization indicate memory pressure leading to service degradation and cascading effects on downstream components."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc5",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "apache01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3433,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource starvation causing application crashes and cascading failures in dependent services."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc1",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Mysql02",
+   "Redis02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3692,
+  "top1_desc": "Extreme network packet spikes and disk I/O anomalies indicate network congestion or data transfer bottlenecks affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc6",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3862,
+  "top1_desc": "High CPU utilization and frequent GC Allocation Failures indicate memory pressure causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1616634240_122__sc4",
+  "uuid": "openrca_bank_1616634240_122",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3945,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation and failures."
+ },
+ {
+  "job": "openrca_bank_1615385940_66__sc6",
+  "uuid": "openrca_bank_1615385940_66",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 3988,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on disk and network metrics."
+ },
+ {
+  "job": "openrca_bank_1614792360_45__sc5",
+  "uuid": "openrca_bank_1614792360_45",
+  "gt": "MG02",
+  "gt_fault": "high JVM CPU load",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4031,
+  "top1_desc": "High CPU utilization and GC errors indicate resource contention or memory leaks in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc7",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4081,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource contention, causing disk I/O spikes and downstream failures."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc0",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4143,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616611380_121__sc0",
+  "uuid": "openrca_bank_1616611380_121",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "MG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4146,
+  "top1_desc": "JVM memory usage spiked dramatically, indicating potential memory leaks or excessive allocation leading to GC events."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc0",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4147,
+  "top1_desc": "High CPU utilization (74.9917%) and disk I/O (sda_DSKWTps peak 0.6) directly caused GC pauses and memory pressure, leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1615517640_31__sc5",
+  "uuid": "openrca_bank_1615517640_31",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4190,
+  "top1_desc": "High disk I/O and CPU idle spikes indicate resource contention, likely exacerbated by frequent GC pauses from logs."
+ },
+ {
+  "job": "openrca_bank_1616492520_42__sc0",
+  "uuid": "openrca_bank_1616492520_42",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG01",
+   "Redis02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4357,
+  "top1_desc": "Extreme JVM memory usage and CPU spikes indicate memory pressure and potential GC failures, directly linked to the GC errors in logs."
+ },
+ {
+  "job": "openrca_bank_1615124160_14__sc7",
+  "uuid": "openrca_bank_1615124160_14",
+  "gt": "Tomcat01",
+  "gt_fault": "network packet loss",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4391,
+  "top1_desc": "Extreme CPU utilization (95.2167%) indicates resource contention, likely causing downstream service delays and GC pauses in Tomcat instances."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc7",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "apache01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4490,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing bottlenecks directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc4",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4535,
+  "top1_desc": "High CPU utilization and disk I/O spikes caused frequent GC pauses, directly linked to the observed GC errors in logs."
+ },
+ {
+  "job": "openrca_bank_1616675100_109__sc2",
+  "uuid": "openrca_bank_1616675100_109",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4607,
+  "top1_desc": "Massive network packet spike (2.5 billion packets) and 100% CPU utilization indicate a potential misconfiguration or sudden traffic surge causing resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1616602740_120__sc7",
+  "uuid": "openrca_bank_1616602740_120",
+  "gt": "apache01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG02",
+   "apache01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4614,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and resource contention."
+ },
+ {
+  "job": "openrca_bank_1615533000_88__sc3",
+  "uuid": "openrca_bank_1615533000_88",
+  "gt": "MG01",
+  "gt_fault": "high CPU usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "MG01",
+   "MG02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4618,
+  "top1_desc": "Extreme disk I/O on sdb caused cascading performance degradation across dependent services."
+ },
+ {
+  "job": "openrca_bank_1616586600_101__sc7",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4628,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing overload, directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc4",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4675,
+  "top1_desc": "Extreme CPU utilization and frequent GC errors indicate memory pressure, likely caused by high disk I/O or resource contention."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc2",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "yes",
+  "think_chars": 4716,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing application slowdowns and potential out-of-memory conditions."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc1",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4732,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615362180_64__sc2",
+  "uuid": "openrca_bank_1615362180_64",
+  "gt": "apache02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "apache02",
+   "Tomcat02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4744,
+  "top1_desc": "High CPU utilization on MG02's CPU-3 reached 100% (severity=extreme), directly causing resource contention and likely contributing to downstream failures."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc2",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4797,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and performance degradation in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc2",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4809,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure causing frequent garbage collection, leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc6",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4813,
+  "top1_desc": "Extreme CPU utilization and frequent GC errors indicate JVM memory pressure and resource contention."
+ },
+ {
+  "job": "openrca_bank_1616565900_119__sc7",
+  "uuid": "openrca_bank_1616565900_119",
+  "gt": "apache01",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4859,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to allocation failures."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc5",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4875,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing application instability."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc5",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4933,
+  "top1_desc": "High JVM memory usage (peak 2.14G) and frequent GC errors indicate memory pressure causing application failures."
+ },
+ {
+  "job": "openrca_bank_1616670000_130__sc2",
+  "uuid": "openrca_bank_1616670000_130",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4967,
+  "top1_desc": "High CPUWIO and JVM memory usage indicate memory pressure leading to frequent garbage collection and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc2",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 4979,
+  "top1_desc": "Extreme CPU utilization and GC errors indicate memory pressure leading to performance degradation and cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc2",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Redis01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5010,
+  "top1_desc": "High JVM memory usage and CPU spikes caused frequent GC pauses, leading to extreme performance degradation and cascading effects on dependent components."
+ },
+ {
+  "job": "openrca_bank_1615027920_6__sc7",
+  "uuid": "openrca_bank_1615027920_6",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5045,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on downstream services."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc1",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5065,
+  "top1_desc": "Extreme CPU utilization and frequent GC pauses indicate memory pressure and processing bottlenecks affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc5",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5139,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to frequent garbage collection, causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615027920_6__sc5",
+  "uuid": "openrca_bank_1615027920_6",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5220,
+  "top1_desc": "Extreme CPU utilization and memory issues with frequent GC errors indicate direct application-level resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1615290120_82__sc0",
+  "uuid": "openrca_bank_1615290120_82",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5227,
+  "top1_desc": "GC errors and high CPU utilization indicate memory pressure leading to frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1615282740_60__sc6",
+  "uuid": "openrca_bank_1615282740_60",
+  "gt": "apache01",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG02",
+   "Tomcat02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5241,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and resource contention in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615534680_34__sc5",
+  "uuid": "openrca_bank_1615534680_34",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5249,
+  "top1_desc": "High CPU utilization and network packet fluctuations indicate resource exhaustion and potential bottlenecks affecting dependent services."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc1",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5297,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing application slowdowns and resource contention."
+ },
+ {
+  "job": "openrca_bank_1614797100_134__sc4",
+  "uuid": "openrca_bank_1614797100_134",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5321,
+  "top1_desc": "High CPU utilization (88.39%) and frequent GC errors indicate resource contention and memory pressure directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc6",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5325,
+  "top1_desc": "High CPU utilization (peak 100%) and frequent GC errors indicate memory pressure and processing bottlenecks."
+ },
+ {
+  "job": "openrca_bank_1614792360_45__sc1",
+  "uuid": "openrca_bank_1614792360_45",
+  "gt": "MG02",
+  "gt_fault": "high JVM CPU load",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5399,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure leading to frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc3",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "IG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5597,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource exhaustion leading to application instability."
+ },
+ {
+  "job": "openrca_bank_1616611380_121__sc1",
+  "uuid": "openrca_bank_1616611380_121",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "IG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5628,
+  "top1_desc": "Extreme JVM memory usage and GC events indicate memory pressure causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1615027920_6__sc6",
+  "uuid": "openrca_bank_1615027920_6",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5667,
+  "top1_desc": "Extreme CPU utilization and frequent GC errors indicate memory pressure and high load, directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc6",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5697,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource contention and potential memory issues affecting service performance."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc0",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5709,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to performance degradation and cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc4",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5721,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource contention leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc6",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5747,
+  "top1_desc": "GC errors and memory peaks indicate JVM resource exhaustion directly linked to high CPU and memory usage."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc3",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5836,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory pressure leading to frequent garbage collection and potential resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc4",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5959,
+  "top1_desc": "High CPU utilization (97.97%) and frequent GC errors indicate resource exhaustion and potential memory issues causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1615305180_92__sc2",
+  "uuid": "openrca_bank_1615305180_92",
+  "gt": "Tomcat04",
+  "gt_fault": "high memory usage",
+  "top1": "ServiceTest11",
+  "pred": [
+   "ServiceTest11",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 5972,
+  "top1_desc": "High app_mrt peak of 764.5 indicates severe load on services, causing Tomcat to handle excessive requests leading to GC errors and CPU spikes."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc0",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "apache01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6014,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to allocation failures and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc3",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6043,
+  "top1_desc": "Extreme network packet spikes and disk I/O anomalies indicate a data plane overload or misconfiguration causing downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc2",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6047,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory pressure from high request volumes or resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc2",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG02",
+   "IG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6137,
+  "top1_desc": "Experienced severe JVM memory usage spikes and frequent GC errors, directly impacting application performance and stability."
+ },
+ {
+  "job": "openrca_bank_1614852540_1__sc6",
+  "uuid": "openrca_bank_1614852540_1",
+  "gt": "Redis02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6142,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource exhaustion and memory issues directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc3",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6157,
+  "top1_desc": "GC errors and extreme CPU utilization (74.9917%) directly indicate memory and CPU resource contention leading to failures."
+ },
+ {
+  "job": "openrca_bank_1616492520_42__sc1",
+  "uuid": "openrca_bank_1616492520_42",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6167,
+  "top1_desc": "High JVM memory usage and CPU spikes leading to frequent GC errors."
+ },
+ {
+  "job": "openrca_bank_1615102860_56__sc3",
+  "uuid": "openrca_bank_1615102860_56",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6194,
+  "top1_desc": "Frequent GC errors and JVM memory usage spikes indicate memory pressure or misconfiguration causing instability in the service."
+ },
+ {
+  "job": "openrca_bank_1616435220_116__sc7",
+  "uuid": "openrca_bank_1616435220_116",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6225,
+  "top1_desc": "GC errors and extreme JVM memory usage indicate memory pressure leading to allocation failures."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc2",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6309,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate resource exhaustion leading to cascading failures in dependent services."
+ },
+ {
+  "job": "openrca_bank_1615114740_13__sc6",
+  "uuid": "openrca_bank_1615114740_13",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6347,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing bottlenecks in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc0",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6416,
+  "top1_desc": "High memory usage and frequent GC errors in Tomcat02 directly correlate with the severe CPU and memory anomalies in its instances, indicating resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1616680860_111__sc7",
+  "uuid": "openrca_bank_1616680860_111",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6428,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate application-level resource exhaustion causing cascading failures."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc4",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6457,
+  "top1_desc": "Spiked network traffic and JVM CPU load indicate resource contention affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616432460_115__sc6",
+  "uuid": "openrca_bank_1616432460_115",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "MG01",
+   "Tomcat01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6596,
+  "top1_desc": "Extreme JVM memory usage and GC errors in Tomcat services indicate memory pressure and resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1615124160_14__sc3",
+  "uuid": "openrca_bank_1615124160_14",
+  "gt": "Tomcat01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6619,
+  "top1_desc": "High disk I/O and frequent GC errors indicate resource exhaustion and application overload."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc7",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6631,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource exhaustion leading to service instability."
+ },
+ {
+  "job": "openrca_bank_1615110720_78__sc3",
+  "uuid": "openrca_bank_1615110720_78",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Mysql01",
+  "pred": [
+   "Mysql01",
+   "Redis01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6656,
+  "top1_desc": "High InnoDB row lock time and pending writes indicate database contention and potential blocking, causing cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616670000_130__sc7",
+  "uuid": "openrca_bank_1616670000_130",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat02",
+   "IG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6665,
+  "top1_desc": "Extreme network packet spikes indicate potential network congestion or DDoS, causing downstream components like Tomcats to experience high CPU/memory load and GC errors."
+ },
+ {
+  "job": "openrca_bank_1616565900_119__sc2",
+  "uuid": "openrca_bank_1616565900_119",
+  "gt": "apache01",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6677,
+  "top1_desc": "Extreme CPU load and frequent GC errors indicate resource exhaustion causing performance degradation and cascading failures."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc0",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "IG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6694,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing overload in the primary Tomcat instance."
+ },
+ {
+  "job": "openrca_bank_1615359720_27__sc1",
+  "uuid": "openrca_bank_1615359720_27",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6753,
+  "top1_desc": "GC errors and 100% CPU utilization indicate memory pressure and resource contention directly impacting application performance."
+ },
+ {
+  "job": "openrca_bank_1615282740_60__sc2",
+  "uuid": "openrca_bank_1615282740_60",
+  "gt": "apache01",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6756,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615384980_65__sc5",
+  "uuid": "openrca_bank_1615384980_65",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6801,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource contention leading to application failures."
+ },
+ {
+  "job": "openrca_bank_1614797100_134__sc1",
+  "uuid": "openrca_bank_1614797100_134",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6836,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure directly linked to the failure."
+ },
+ {
+  "job": "openrca_bank_1616565900_119__sc1",
+  "uuid": "openrca_bank_1616565900_119",
+  "gt": "apache01",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6862,
+  "top1_desc": "High CPU utilization and frequent GC allocation failures indicate memory pressure and performance degradation in the critical application layer."
+ },
+ {
+  "job": "openrca_bank_1615102860_56__sc1",
+  "uuid": "openrca_bank_1615102860_56",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "apache01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6900,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616492520_42__sc4",
+  "uuid": "openrca_bank_1616492520_42",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6907,
+  "top1_desc": "High CPU utilization (100%) and JVM memory usage (1.86T) caused frequent GC pauses, leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1616589240_102__sc1",
+  "uuid": "openrca_bank_1616589240_102",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6920,
+  "top1_desc": "High CPU utilization (100%) and frequent GC pauses indicate resource contention leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616675100_109__sc6",
+  "uuid": "openrca_bank_1616675100_109",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 6984,
+  "top1_desc": "High CPU utilization and network packet spikes indicate resource contention, exacerbated by frequent GC failures in logs."
+ },
+ {
+  "job": "openrca_bank_1615270440_19__sc1",
+  "uuid": "openrca_bank_1615270440_19",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7017,
+  "top1_desc": "High CPU idle time and frequent GC errors indicate memory pressure leading to resource contention and disk I/O spikes."
+ },
+ {
+  "job": "openrca_bank_1615266600_18__sc2",
+  "uuid": "openrca_bank_1615266600_18",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Redis01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7037,
+  "top1_desc": "High network bandwidth utilization and TCP connection spikes indicate resource exhaustion affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc2",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7050,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing application instability."
+ },
+ {
+  "job": "openrca_bank_1616658120_129__sc5",
+  "uuid": "openrca_bank_1616658120_129",
+  "gt": "Mysql02",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Mysql01",
+   "Mysql02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7147,
+  "top1_desc": "High disk I/O and peak disk read/write metrics indicate potential storage bottlenecks affecting downstream services like Tomcat and MySQL."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc0",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Mysql02",
+  "pred": [
+   "Mysql02",
+   "Redis02",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7172,
+  "top1_desc": "Extreme spikes in 'Bytes Received' and 'Innodb buffer pool pages dirty' indicate database under heavy write load or corruption, likely caused by application traffic or I/O bottlenecks."
+ },
+ {
+  "job": "openrca_bank_1615034640_72__sc3",
+  "uuid": "openrca_bank_1615034640_72",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7218,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615362180_64__sc0",
+  "uuid": "openrca_bank_1615362180_64",
+  "gt": "apache02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "Tomcat02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7243,
+  "top1_desc": "Extreme CPU utilization on CPU-3 reached 100% and sustained, causing resource contention and likely impacting downstream services like Tomcat and MySQL."
+ },
+ {
+  "job": "openrca_bank_1614856920_3__sc1",
+  "uuid": "openrca_bank_1614856920_3",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "ServiceTest10",
+  "pred": [
+   "ServiceTest10",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7265,
+  "top1_desc": "Extreme app_mrt spike (peak 619.16) directly correlates with high downstream load on databases and disks."
+ },
+ {
+  "job": "openrca_bank_1616667180_107__sc4",
+  "uuid": "openrca_bank_1616667180_107",
+  "gt": "IG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "apache01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7278,
+  "top1_desc": "High CPU utilization peaked at 100% (onset@+360s) and frequent GC errors indicate resource exhaustion directly impacting application performance."
+ },
+ {
+  "job": "openrca_bank_1616511840_95__sc3",
+  "uuid": "openrca_bank_1616511840_95",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7286,
+  "top1_desc": "High CPU utilization and TCP-CLOSE-WAIT issues indicate resource exhaustion and connection problems, directly impacting service availability."
+ },
+ {
+  "job": "openrca_bank_1615266600_18__sc1",
+  "uuid": "openrca_bank_1615266600_18",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7376,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to allocation failures and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc4",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7379,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure causing frequent garbage collection pauses, leading to CPU spikes and service degradation."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc0",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis01",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7427,
+  "top1_desc": "GC errors and high CPU utilization indicate memory and processing issues leading to frequent garbage collection."
+ },
+ {
+  "job": "openrca_bank_1616586600_101__sc0",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "yes",
+  "think_chars": 7451,
+  "top1_desc": "High CPU utilization and frequent GC Allocation Failures in logs indicate resource contention and memory pressure directly causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1616511840_95__sc1",
+  "uuid": "openrca_bank_1616511840_95",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7475,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource exhaustion causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1615073520_10__sc2",
+  "uuid": "openrca_bank_1615073520_10",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7478,
+  "top1_desc": "MG01's CPU utilization peaks at 100% (extreme severity), indicating a critical resource bottleneck causing downstream failures in services like Tomcat and Mysql."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc3",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7517,
+  "top1_desc": "GC errors and high CPU utilization indicate memory pressure causing frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1615102860_56__sc2",
+  "uuid": "openrca_bank_1615102860_56",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7599,
+  "top1_desc": "GC errors and JVM memory usage spikes indicate memory exhaustion or leaks in the Tomcat instance, directly causing failures."
+ },
+ {
+  "job": "openrca_bank_1615515120_93__sc5",
+  "uuid": "openrca_bank_1615515120_93",
+  "gt": "Mysql01",
+  "gt_fault": "high memory usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7651,
+  "top1_desc": "Extreme disk I/O and CPU usage indicate resource exhaustion impacting downstream services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc7",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7657,
+  "top1_desc": "GC errors and CPU utilization spikes indicate memory pressure and performance degradation directly impacting service stability."
+ },
+ {
+  "job": "openrca_bank_1615385940_66__sc5",
+  "uuid": "openrca_bank_1615385940_66",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7680,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to allocation failures."
+ },
+ {
+  "job": "openrca_bank_1616675100_109__sc1",
+  "uuid": "openrca_bank_1616675100_109",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7690,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource contention or memory pressure in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc4",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Mysql01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7717,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and processing overload in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615124160_14__sc5",
+  "uuid": "openrca_bank_1615124160_14",
+  "gt": "Tomcat01",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7772,
+  "top1_desc": "High CPU idle time (98%) indicates potential CPU resource starvation, which could cause performance degradation and trigger downstream issues."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc7",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Redis01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7776,
+  "top1_desc": "Extreme network traffic spike (NETKBTotalPerSec) and high JVM CPU load (JVM_CPULoad) indicate potential resource contention or overload affecting downstream services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1615360740_28__sc7",
+  "uuid": "openrca_bank_1615360740_28",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7781,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure causing application slowdowns, which propagates to downstream components."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc7",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7802,
+  "top1_desc": "Extreme network packet spikes indicate a potential DDoS or misconfigured traffic surge, directly impacting downstream services like Tomcat01-04."
+ },
+ {
+  "job": "openrca_bank_1615027920_6__sc1",
+  "uuid": "openrca_bank_1615027920_6",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7821,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc3",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7822,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate resource exhaustion leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1615360740_28__sc3",
+  "uuid": "openrca_bank_1615360740_28",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7848,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616634240_122__sc0",
+  "uuid": "openrca_bank_1616634240_122",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Tomcat02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7850,
+  "top1_desc": "High disk I/O spikes in MG01's local disks indicate resource contention, likely causing delays in backend services dependent on it, including Tomcats."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc4",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7887,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc4",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 7980,
+  "top1_desc": "High memory usage and GC errors indicate JVM heap pressure directly causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616611380_121__sc2",
+  "uuid": "openrca_bank_1616611380_121",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "apache01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8011,
+  "top1_desc": "Extreme JVM memory usage spike leading to frequent garbage collection and potential memory pressure on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc4",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Mysql02",
+   "Redis02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8085,
+  "top1_desc": "Extreme network packet spikes indicate overwhelming traffic, likely causing resource contention and cascading failures in dependent components like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1616667180_107__sc0",
+  "uuid": "openrca_bank_1616667180_107",
+  "gt": "IG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8119,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and processing bottlenecks directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1616602740_120__sc2",
+  "uuid": "openrca_bank_1616602740_120",
+  "gt": "apache01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "Tomcat01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8191,
+  "top1_desc": "MG02's CPU utilization spiked to 100% for 240s, causing resource contention and likely impacting downstream services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1616575620_125__sc3",
+  "uuid": "openrca_bank_1616575620_125",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8218,
+  "top1_desc": "High CPUWio and disk metrics indicate I/O bottlenecks affecting downstream services like Tomcats and databases."
+ },
+ {
+  "job": "openrca_bank_1615272120_80__sc2",
+  "uuid": "openrca_bank_1615272120_80",
+  "gt": "Redis02",
+  "gt_fault": "high CPU usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "Tomcat01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8291,
+  "top1_desc": "High disk read throughput and network bandwidth utilization indicate resource contention affecting downstream services like Tomcat, leading to performance degradation and GC errors."
+ },
+ {
+  "job": "openrca_bank_1616670000_130__sc6",
+  "uuid": "openrca_bank_1616670000_130",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8325,
+  "top1_desc": "High disk I/O and network anomalies indicate resource contention affecting downstream services like Tomcats."
+ },
+ {
+  "job": "openrca_bank_1616658120_129__sc2",
+  "uuid": "openrca_bank_1616658120_129",
+  "gt": "Mysql02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Mysql02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8344,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1615536900_67__sc2",
+  "uuid": "openrca_bank_1615536900_67",
+  "gt": "IG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Mysql01",
+   "IG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8428,
+  "top1_desc": "High CPU utilization (100%) in Tomcat01's CPU-0_SingleCpuUtil indicates severe resource contention."
+ },
+ {
+  "job": "openrca_bank_1616629200_104__sc1",
+  "uuid": "openrca_bank_1616629200_104",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8450,
+  "top1_desc": "High CPU utilization (100% on CPU-3) and GC allocation failures indicate memory pressure directly causing application instability."
+ },
+ {
+  "job": "openrca_bank_1616629200_104__sc5",
+  "uuid": "openrca_bank_1616629200_104",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8491,
+  "top1_desc": "High CPU utilization (100.0%) and GC errors indicate memory pressure causing service degradation and latency spikes in traces."
+ },
+ {
+  "job": "openrca_bank_1615359720_27__sc5",
+  "uuid": "openrca_bank_1615359720_27",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8569,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure causing frequent garbage collection pauses, which likely cascades to downstream services like Mysql01 and Redis01."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc2",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8622,
+  "top1_desc": "Extreme JVM CPU load (peak 4.01) and high memory usage in Tomcat03 indicate resource contention causing GC pauses and service degradation."
+ },
+ {
+  "job": "openrca_bank_1615295220_24__sc1",
+  "uuid": "openrca_bank_1615295220_24",
+  "gt": "apache01",
+  "gt_fault": "network latency",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8775,
+  "top1_desc": "Extreme CPU utilization (100%) at onset, directly causing high load and potential GC pauses in downstream services."
+ },
+ {
+  "job": "openrca_bank_1615563180_37__sc1",
+  "uuid": "openrca_bank_1615563180_37",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8778,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1614866400_50__sc2",
+  "uuid": "openrca_bank_1614866400_50",
+  "gt": "MG01",
+  "gt_fault": "JVM Out of Memory (OOM) Heap",
+  "top1": "Mysql02",
+  "pred": [
+   "Mysql02",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8787,
+  "top1_desc": "Extreme disk read and log pending fsyncs indicate database I/O bottlenecks affecting downstream services like Tomcat01."
+ },
+ {
+  "job": "openrca_bank_1615086540_76__sc7",
+  "uuid": "openrca_bank_1615086540_76",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8806,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615266600_18__sc4",
+  "uuid": "openrca_bank_1615266600_18",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Mysql01",
+  "pred": [
+   "Mysql01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8850,
+  "top1_desc": "Extreme InnoDB row lock time indicates database contention causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc5",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8897,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory issues leading to failures."
+ },
+ {
+  "job": "openrca_bank_1616680860_111__sc2",
+  "uuid": "openrca_bank_1616680860_111",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8909,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate application-level resource exhaustion causing cascading effects on dependent components."
+ },
+ {
+  "job": "openrca_bank_1615073520_10__sc7",
+  "uuid": "openrca_bank_1615073520_10",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "ServiceTest1",
+  "pred": [
+   "ServiceTest1",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8970,
+  "top1_desc": "Extreme high utilization in app_rr and app_mrt metrics, indicating potential overload or misconfiguration causing cascading effects."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc1",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8975,
+  "top1_desc": "Extreme JVM CPU load peaks at 4.01, indicating heavy processing strain on the JVM, likely causing cascading failures in dependent services."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc3",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 8988,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure directly causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616670000_130__sc5",
+  "uuid": "openrca_bank_1616670000_130",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "IG02",
+   "IG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9017,
+  "top1_desc": "High CPU utilization and JVM memory usage with frequent GC errors indicate direct resource exhaustion causing application instability."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc0",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9026,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616432460_115__sc0",
+  "uuid": "openrca_bank_1616432460_115",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9036,
+  "top1_desc": "High disk I/O and write throughput spikes (DSKWrite, DSKWTps) indicate resource contention affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616511840_95__sc2",
+  "uuid": "openrca_bank_1616511840_95",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9043,
+  "top1_desc": "High CPU utilization (100% at onset+60s) and GC errors indicate memory pressure leading to frequent garbage collection, directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1616629200_104__sc2",
+  "uuid": "openrca_bank_1616629200_104",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9072,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and processing bottlenecks."
+ },
+ {
+  "job": "openrca_bank_1615534680_34__sc4",
+  "uuid": "openrca_bank_1615534680_34",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9131,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure and performance degradation directly impacting service availability."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc2",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Tomcat02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9139,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate JVM memory issues causing performance degradation and cascading effects on downstream services."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc5",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9140,
+  "top1_desc": "Extreme JVM memory usage peaks and high disk write rates indicate resource exhaustion, likely causing downstream failures in Tomcat instances."
+ },
+ {
+  "job": "openrca_bank_1615362180_64__sc5",
+  "uuid": "openrca_bank_1615362180_64",
+  "gt": "apache02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "apache02",
+   "ServiceTest1"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9149,
+  "top1_desc": "High CPU utilization on CPU-3_SingleCpuUtil (100%) and high CPU idle time (95.65%) indicate a CPU bottleneck affecting downstream components like Tomcats."
+ },
+ {
+  "job": "openrca_bank_1615013160_5__sc1",
+  "uuid": "openrca_bank_1615013160_5",
+  "gt": "Tomcat03",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9169,
+  "top1_desc": "High disk I/O and write metrics indicate potential storage bottlenecks affecting downstream services like Tomcat, leading to resource contention and GC errors."
+ },
+ {
+  "job": "openrca_bank_1616511840_95__sc5",
+  "uuid": "openrca_bank_1616511840_95",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9243,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource contention and potential memory issues affecting service performance."
+ },
+ {
+  "job": "openrca_bank_1616504820_44__sc1",
+  "uuid": "openrca_bank_1616504820_44",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9249,
+  "top1_desc": "GC errors and high CPU utilization indicate memory pressure leading to frequent garbage collection, which propagates to upstream components."
+ },
+ {
+  "job": "openrca_bank_1614856920_3__sc0",
+  "uuid": "openrca_bank_1614856920_3",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9281,
+  "top1_desc": "Extreme disk write and CPU idle drops indicate severe I/O and processing bottlenecks in the primary storage node."
+ },
+ {
+  "job": "openrca_bank_1615360740_28__sc0",
+  "uuid": "openrca_bank_1615360740_28",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9309,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and performance degradation directly linked to the failure."
+ },
+ {
+  "job": "openrca_bank_1616567400_98__sc0",
+  "uuid": "openrca_bank_1616567400_98",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "IG01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9317,
+  "top1_desc": "High CPU utilization (98.3%) and potential performance degradation affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1615070100_74__sc6",
+  "uuid": "openrca_bank_1615070100_74",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9327,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to allocation failures."
+ },
+ {
+  "job": "openrca_bank_1615515120_93__sc4",
+  "uuid": "openrca_bank_1615515120_93",
+  "gt": "Mysql01",
+  "gt_fault": "high memory usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Mysql01",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9360,
+  "top1_desc": "Extreme disk I/O issues (DSKReadWrite and DSKTps) indicate resource contention, likely causing performance degradation for downstream services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1616602740_120__sc5",
+  "uuid": "openrca_bank_1616602740_120",
+  "gt": "apache01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9377,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to frequent garbage collection failures."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc2",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9426,
+  "top1_desc": "Extreme network and disk I/O spikes indicate resource contention, likely causing downstream service degradation and GC pauses."
+ },
+ {
+  "job": "openrca_bank_1615252680_16__sc7",
+  "uuid": "openrca_bank_1615252680_16",
+  "gt": "IG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9444,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate severe performance degradation directly impacting service metrics."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc7",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9456,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and processing overload."
+ },
+ {
+  "job": "openrca_bank_1615070100_74__sc7",
+  "uuid": "openrca_bank_1615070100_74",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9457,
+  "top1_desc": "High CPU utilization and frequent GC errors in Tomcat02 indicate memory pressure and processing bottlenecks directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1616629200_104__sc4",
+  "uuid": "openrca_bank_1616629200_104",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9480,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource contention and memory pressure in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615315440_61__sc5",
+  "uuid": "openrca_bank_1615315440_61",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9494,
+  "top1_desc": "Extreme CPU utilization on MG01 (CPU-2 SingleCpuUtil) indicates resource contention causing cascading failures in dependent services."
+ },
+ {
+  "job": "openrca_bank_1615073520_10__sc0",
+  "uuid": "openrca_bank_1615073520_10",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9604,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing application instability."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc6",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9624,
+  "top1_desc": "High GC errors and CPU spikes directly correlate with the onset of the incident, indicating memory pressure causing frequent garbage collection."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc6",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9742,
+  "top1_desc": "Experienced 100% CPU utilization on CPU-2 and frequent GC errors, indicating memory pressure and resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1615280160_21__sc0",
+  "uuid": "openrca_bank_1615280160_21",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9744,
+  "top1_desc": "High memory usage and frequent GC Allocation Failures in logs indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc6",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9767,
+  "top1_desc": "Extreme JVM CPU load and network traffic spikes indicate resource contention causing downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1615305180_92__sc1",
+  "uuid": "openrca_bank_1615305180_92",
+  "gt": "Tomcat04",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9808,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource contention, directly causing application instability."
+ },
+ {
+  "job": "openrca_bank_1615060740_112__sc2",
+  "uuid": "openrca_bank_1615060740_112",
+  "gt": "Tomcat02",
+  "gt_fault": "JVM Out of Memory (OOM) Heap",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "IG01",
+   "Tomcat02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9810,
+  "top1_desc": "High JVM memory usage (peak 19.3225) and frequent GC errors in Tomcat02/03 indicate memory pressure on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616504820_44__sc4",
+  "uuid": "openrca_bank_1616504820_44",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG02",
+   "ServiceTest4"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9865,
+  "top1_desc": "High disk read/write and CPU metrics indicate resource exhaustion leading to GC pauses and service degradation."
+ },
+ {
+  "job": "openrca_bank_1616504820_44__sc5",
+  "uuid": "openrca_bank_1616504820_44",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9931,
+  "top1_desc": "High CPU utilization due to frequent GC errors directly caused by memory pressure, leading to cascading effects on downstream components."
+ },
+ {
+  "job": "openrca_bank_1615360740_28__sc1",
+  "uuid": "openrca_bank_1615360740_28",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 9990,
+  "top1_desc": "High CPU utilization (100% peak) and frequent GC errors indicate memory pressure and processing overload."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc6",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10043,
+  "top1_desc": "Extreme network packet spikes indicate overwhelming traffic, likely causing downstream services (Tomcats) to fail, leading to GC errors and resource contention."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc6",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "MG02",
+  "pred": [
+   "MG02",
+   "Tomcat04",
+   "IG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10045,
+  "top1_desc": "High CPU utilization (100% on CPU-3_SingleCpuUtil) caused system-wide resource contention, exacerbating downstream impacts on Tomcat services."
+ },
+ {
+  "job": "openrca_bank_1616567400_98__sc6",
+  "uuid": "openrca_bank_1616567400_98",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10156,
+  "top1_desc": "High CPU utilization and GC errors in Tomcat01 indicate memory pressure and processing bottlenecks, directly linked to the failure window and downstream impacts on dependent services."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc0",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat02",
+   "IG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10200,
+  "top1_desc": "High disk write metrics (peak 44.8) indicate resource contention, likely causing downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc7",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10222,
+  "top1_desc": "Extreme disk read/write and CPU utilization indicate high I/O and processing load, likely causing cascading effects on dependent systems."
+ },
+ {
+  "job": "openrca_bank_1615070100_74__sc3",
+  "uuid": "openrca_bank_1615070100_74",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat02",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10232,
+  "top1_desc": "High CPU utilization (100%) and peak disk I/O anomalies suggest resource contention affecting downstream services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1615270440_19__sc3",
+  "uuid": "openrca_bank_1615270440_19",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10332,
+  "top1_desc": "GC errors and high disk I/O indicate memory pressure and resource contention directly impacting Tomcat performance."
+ },
+ {
+  "job": "openrca_bank_1615124160_14__sc1",
+  "uuid": "openrca_bank_1615124160_14",
+  "gt": "Tomcat01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10436,
+  "top1_desc": "High disk I/O (914.8) and GC errors indicate resource exhaustion due to heavy read/write operations."
+ },
+ {
+  "job": "openrca_bank_1616435220_116__sc6",
+  "uuid": "openrca_bank_1616435220_116",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10437,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory pressure leading to frequent garbage collection, directly causing application instability."
+ },
+ {
+  "job": "openrca_bank_1614972960_71__sc1",
+  "uuid": "openrca_bank_1614972960_71",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10486,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615515840_87__sc5",
+  "uuid": "openrca_bank_1615515840_87",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10486,
+  "top1_desc": "High GC errors and memory usage spikes indicate memory pressure leading to frequent garbage collection, likely caused by resource contention from upstream components."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc7",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Mysql01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10535,
+  "top1_desc": "Experienced extreme JVM memory usage and GC errors, directly linked to the peak memory anomalies and logs indicating allocation failures."
+ },
+ {
+  "job": "openrca_bank_1615515120_93__sc3",
+  "uuid": "openrca_bank_1615515120_93",
+  "gt": "Mysql01",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10562,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure causing instability in the service."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc4",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10587,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure leading to frequent garbage collection, causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616480640_39__sc5",
+  "uuid": "openrca_bank_1616480640_39",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10716,
+  "top1_desc": "Extreme network packet spikes and disk I/O anomalies suggest network congestion or disk saturation, directly impacting downstream services like Tomcat01-04."
+ },
+ {
+  "job": "openrca_bank_1615385940_66__sc0",
+  "uuid": "openrca_bank_1615385940_66",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10808,
+  "top1_desc": "High memory usage and GC errors indicate memory pressure directly impacting Tomcat01's performance."
+ },
+ {
+  "job": "openrca_bank_1615322280_85__sc4",
+  "uuid": "openrca_bank_1615322280_85",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 10894,
+  "top1_desc": "High JVM memory usage and GC failures indicate memory exhaustion leading to allocation failures and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc4",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "IG01",
+   "ServiceTest3"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11028,
+  "top1_desc": "High CPU utilization (100%) and JVM memory usage peaks caused frequent GC pauses, directly impacting performance and stability."
+ },
+ {
+  "job": "openrca_bank_1615272120_80__sc1",
+  "uuid": "openrca_bank_1615272120_80",
+  "gt": "Redis02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "IG01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11161,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory pressure causing frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1615305180_92__sc4",
+  "uuid": "openrca_bank_1615305180_92",
+  "gt": "Tomcat04",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat04"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11213,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource contention leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615385940_66__sc7",
+  "uuid": "openrca_bank_1615385940_66",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11382,
+  "top1_desc": "High memory usage and GC errors indicate memory pressure in the primary Tomcat instance, likely causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc5",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "ServiceTest1",
+  "pred": [
+   "ServiceTest1",
+   "Tomcat02",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11455,
+  "top1_desc": "ServiceTest1 has an extreme peak in app_mrt (6327.02) indicating overwhelming load, which likely caused high CPU/memory usage in Tomcat leading to GC errors."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc3",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "MG02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11513,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure leading to allocation failures."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc3",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG02",
+   "IG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11596,
+  "top1_desc": "High JVMUsedMemory peaks (1.629B) and GC errors indicate memory pressure causing frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1614963180_4__sc0",
+  "uuid": "openrca_bank_1614963180_4",
+  "gt": "Tomcat04",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11725,
+  "top1_desc": "High CPU utilization (100%) on a core, leading to potential resource contention and GC pauses."
+ },
+ {
+  "job": "openrca_bank_1615013160_5__sc5",
+  "uuid": "openrca_bank_1615013160_5",
+  "gt": "Tomcat03",
+  "gt_fault": "network latency",
+  "top1": "ServiceTest1",
+  "pred": [
+   "ServiceTest1",
+   "ServiceTest11",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11793,
+  "top1_desc": "High peak in app_mrt metric (4272.65) indicates severe application load, likely causing resource contention and GC errors in Tomcat."
+ },
+ {
+  "job": "openrca_bank_1615013160_5__sc4",
+  "uuid": "openrca_bank_1615013160_5",
+  "gt": "Tomcat03",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "ServiceTest1"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 11974,
+  "top1_desc": "High disk write throughput (sda_DSKWrite) and extreme CPU idling indicate resource contention, likely causing cascading failures in downstream components like Tomcat and Redis."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc3",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Redis01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12005,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1615270440_19__sc7",
+  "uuid": "openrca_bank_1615270440_19",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12171,
+  "top1_desc": "Frequent GC errors indicate memory pressure, likely caused by high disk I/O and CPU contention from upstream components."
+ },
+ {
+  "job": "openrca_bank_1616438160_94__sc6",
+  "uuid": "openrca_bank_1616438160_94",
+  "gt": "Tomcat01",
+  "gt_fault": "high memory usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "MG02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12347,
+  "top1_desc": "Extreme JVM memory usage peaks at 42.3436, indicating potential memory pressure causing GC pauses and downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1615094640_77__sc5",
+  "uuid": "openrca_bank_1615094640_77",
+  "gt": "IG01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "IG01",
+   "Mysql02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12369,
+  "top1_desc": "Memory pressure from JVMUsedMemory spikes and frequent GC errors indicate critical resource exhaustion directly linked to application failures."
+ },
+ {
+  "job": "openrca_bank_1616586600_101__sc5",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "MG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12480,
+  "top1_desc": "High CPU utilization and GC errors indicate resource exhaustion causing service degradation."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc2",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12522,
+  "top1_desc": "High CPU usage and GC errors indicate memory pressure causing service instability."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc0",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12538,
+  "top1_desc": "GC errors and high JVM memory usage indicate memory pressure directly affecting Tomcat03's performance."
+ },
+ {
+  "job": "openrca_bank_1614856920_3__sc3",
+  "uuid": "openrca_bank_1614856920_3",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 12820,
+  "top1_desc": "Extreme disk I/O spikes in MG01's sdb DSKWrite and sdb DSKReadWrite indicate heavy write load, likely caused by upstream Tomcat components."
+ },
+ {
+  "job": "openrca_bank_1614967200_70__sc4",
+  "uuid": "openrca_bank_1614967200_70",
+  "gt": "Mysql01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 13386,
+  "top1_desc": "High CPU utilization (72.4%) and GC errors indicate severe performance degradation directly impacting service responsiveness."
+ },
+ {
+  "job": "openrca_bank_1616629200_104__sc7",
+  "uuid": "openrca_bank_1616629200_104",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 13693,
+  "top1_desc": "Extreme network packet rates and disk I/O anomalies indicate network and storage congestion, likely caused by upstream traffic from Tomcat services."
+ },
+ {
+  "job": "openrca_bank_1616586600_101__sc2",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 13832,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615563180_37__sc0",
+  "uuid": "openrca_bank_1615563180_37",
+  "gt": "apache02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 14541,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615315440_61__sc6",
+  "uuid": "openrca_bank_1615315440_61",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Mysql01",
+   "Tomcat01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 16451,
+  "top1_desc": "Extreme CPU utilization (99.6% SingleCpuUtil) indicates heavy processing load causing downstream component strain."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc6",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "Tomcat01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "yes",
+  "m1_premature": "no",
+  "think_chars": 16536,
+  "top1_desc": "Redis01 has a massive spike in network packets in and out, indicating a potential network overload or misconfiguration causing downstream service disruptions."
+ },
+ {
+  "job": "openrca_bank_1615295220_24__sc3",
+  "uuid": "openrca_bank_1615295220_24",
+  "gt": "apache01",
+  "gt_fault": "network latency",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "Tomcat02",
+   "apache01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 2078,
+  "top1_desc": "Extreme CPU utilization peaks at 100% immediately, indicating immediate resource exhaustion causing downstream failures."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc1",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "yes",
+  "think_chars": 2915,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to allocation failures and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc0",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "yes",
+  "think_chars": 2924,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on dependent services."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc4",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 2984,
+  "top1_desc": "High JVM memory usage and frequent GC allocation failures indicate memory pressure causing service degradation and cascading effects on dependent components."
+ },
+ {
+  "job": "openrca_bank_1616611380_121__sc3",
+  "uuid": "openrca_bank_1616611380_121",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "MG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 3155,
+  "top1_desc": "JVM memory usage in MG01 spiked to 1883M with frequent GC pauses, directly causing the GC error in Tomcat04."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc7",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 3862,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to CPU spikes and downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1615110720_78__sc6",
+  "uuid": "openrca_bank_1615110720_78",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 3997,
+  "top1_desc": "High CPU utilization (peak 100%) and frequent GC errors indicate resource exhaustion causing performance degradation and cascading effects on downstream components."
+ },
+ {
+  "job": "openrca_bank_1616567400_98__sc1",
+  "uuid": "openrca_bank_1616567400_98",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Redis01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4333,
+  "top1_desc": "High disk I/O (DSKTps) and DSKWrite spikes indicate resource contention affecting dependent services like Tomcat01-04."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc1",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "apache01",
+  "pred": [
+   "apache01",
+   "MG01",
+   "Tomcat02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4424,
+  "top1_desc": "Extreme CPU utilization (100%) at onset, likely causing upstream stress on downstream services like IG01/IG02 and Tomcats."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc0",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "Mysql02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4562,
+  "top1_desc": "GC errors and extreme JVM memory usage indicate memory pressure causing frequent garbage collection pauses, disrupting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616492520_42__sc2",
+  "uuid": "openrca_bank_1616492520_42",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "MG01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4673,
+  "top1_desc": "High JVM memory usage and CPU utilization indicate memory pressure leading to frequent GC pauses, directly linked to the logs showing GC errors."
+ },
+ {
+  "job": "openrca_bank_1615086540_76__sc2",
+  "uuid": "openrca_bank_1615086540_76",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4768,
+  "top1_desc": "High CPU and memory usage with frequent GC errors indicate resource exhaustion leading to service degradation."
+ },
+ {
+  "job": "openrca_bank_1615102860_56__sc7",
+  "uuid": "openrca_bank_1615102860_56",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4900,
+  "top1_desc": "GC errors and extreme JVM memory drop indicate memory pressure causing failures in the critical service."
+ },
+ {
+  "job": "openrca_bank_1615034640_72__sc5",
+  "uuid": "openrca_bank_1615034640_72",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 4992,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure leading to performance degradation and cascading effects on downstream services."
+ },
+ {
+  "job": "openrca_bank_1616482200_40__sc3",
+  "uuid": "openrca_bank_1616482200_40",
+  "gt": "MG01",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "MG02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5167,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and resource contention, directly causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1614963180_4__sc7",
+  "uuid": "openrca_bank_1614963180_4",
+  "gt": "Tomcat04",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Mysql01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5197,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate resource exhaustion and performance degradation in the critical service."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc1",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5207,
+  "top1_desc": "Memory and GC errors indicate severe JVM resource exhaustion, directly causing high JVM used memory and frequent garbage collection pauses."
+ },
+ {
+  "job": "openrca_bank_1615270440_19__sc4",
+  "uuid": "openrca_bank_1615270440_19",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Redis01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5235,
+  "top1_desc": "High CPU idle time and GC errors indicate memory pressure from resource contention, directly causing application instability."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc7",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "Tomcat02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5250,
+  "top1_desc": "High CPU utilization (100%) and memory usage (38%) with GC errors indicate resource exhaustion and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616675100_109__sc0",
+  "uuid": "openrca_bank_1616675100_109",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "Tomcat03",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5419,
+  "top1_desc": "Redis01 experienced extreme CPU utilization peaking at 100% immediately, with CPU idle dropping to 0%, indicating a critical resource bottleneck."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc6",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "yes",
+  "think_chars": 5442,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to allocation failures and performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615322280_85__sc2",
+  "uuid": "openrca_bank_1615322280_85",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat03",
+   "Tomcat01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5488,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure causing failures in the service."
+ },
+ {
+  "job": "openrca_bank_1614841020_0__sc6",
+  "uuid": "openrca_bank_1614841020_0",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5541,
+  "top1_desc": "High CPU utilization (100%) and GC errors indicate resource exhaustion directly causing downstream impacts on disk and network metrics."
+ },
+ {
+  "job": "openrca_bank_1615528980_33__sc0",
+  "uuid": "openrca_bank_1615528980_33",
+  "gt": "MG02",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5658,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate resource exhaustion leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc1",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5739,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc3",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat03",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 5858,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure and performance degradation directly impacting service metrics."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc6",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat02",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6112,
+  "top1_desc": "High CPU utilization (100%) on a core, causing critical resource contention and potential service degradation."
+ },
+ {
+  "job": "openrca_bank_1616569560_99__sc3",
+  "uuid": "openrca_bank_1616569560_99",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "apache01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6127,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure causing performance degradation and cascading effects on downstream components."
+ },
+ {
+  "job": "openrca_bank_1615110720_78__sc4",
+  "uuid": "openrca_bank_1615110720_78",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis02",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6300,
+  "top1_desc": "High CPU utilization (100%) and memory usage spikes indicate resource contention leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615060740_112__sc5",
+  "uuid": "openrca_bank_1615060740_112",
+  "gt": "Tomcat02",
+  "gt_fault": "JVM Out of Memory (OOM) Heap",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat02",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6306,
+  "top1_desc": "High JVM memory usage and GC errors indicate memory pressure and allocation failures directly impacting application performance."
+ },
+ {
+  "job": "openrca_bank_1616504820_44__sc2",
+  "uuid": "openrca_bank_1616504820_44",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6409,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate resource exhaustion leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616634240_122__sc6",
+  "uuid": "openrca_bank_1616634240_122",
+  "gt": "Tomcat01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6422,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and processing overload, likely causing cascading failures in downstream components."
+ },
+ {
+  "job": "openrca_bank_1616432460_115__sc5",
+  "uuid": "openrca_bank_1616432460_115",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "IG02",
+   "MG01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6526,
+  "top1_desc": "High disk I/O and CPU idle time indicate resource contention affecting upstream services."
+ },
+ {
+  "job": "openrca_bank_1616496180_124__sc5",
+  "uuid": "openrca_bank_1616496180_124",
+  "gt": "Tomcat03",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "yes",
+  "think_chars": 6534,
+  "top1_desc": "Extreme CPU usage and frequent GC errors indicate memory pressure directly causing failures in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615086540_76__sc1",
+  "uuid": "openrca_bank_1615086540_76",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6635,
+  "top1_desc": "High frequency GC errors and extreme JVM memory usage indicate memory pressure and potential heap leaks in the application layer."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc1",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat01",
+   "Redis02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6849,
+  "top1_desc": "High disk read/write metrics (291.0) indicate resource contention affecting downstream Tomcat services."
+ },
+ {
+  "job": "openrca_bank_1615553160_90__sc5",
+  "uuid": "openrca_bank_1615553160_90",
+  "gt": "Redis01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6913,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc4",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6949,
+  "top1_desc": "Extreme CPU utilization and high SingleCpuUtil on multiple cores indicate a critical resource bottleneck affecting dependent services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc2",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "MG01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 6968,
+  "top1_desc": "High CPU utilization (100%) and frequent GC errors indicate memory pressure and performance degradation directly impacting service reliability."
+ },
+ {
+  "job": "openrca_bank_1616575620_125__sc2",
+  "uuid": "openrca_bank_1616575620_125",
+  "gt": "Tomcat01",
+  "gt_fault": "high CPU usage",
+  "top1": "Mysql01",
+  "pred": [
+   "Mysql01",
+   "Redis01",
+   "Tomcat01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7059,
+  "top1_desc": "High disk I/O and slow query logs indicate database under stress, likely causing cascading effects on dependent services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1616658120_129__sc1",
+  "uuid": "openrca_bank_1616658120_129",
+  "gt": "Mysql02",
+  "gt_fault": "high CPU usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "MG02",
+   "Mysql02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7091,
+  "top1_desc": "Extreme CPU utilization peaks at 100% immediately, indicating a critical resource bottleneck causing cascading failures in downstream services."
+ },
+ {
+  "job": "openrca_bank_1615034640_72__sc0",
+  "uuid": "openrca_bank_1615034640_72",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "Redis01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7325,
+  "top1_desc": "High CPU utilization and frequent GC errors indicate memory pressure and resource exhaustion directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1616589240_102__sc0",
+  "uuid": "openrca_bank_1616589240_102",
+  "gt": "Tomcat03",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "MG01",
+   "IG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7358,
+  "top1_desc": "High CPU utilization on CPU-3 (100%) and frequent GC errors indicate memory pressure and resource contention directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1615360740_28__sc2",
+  "uuid": "openrca_bank_1615360740_28",
+  "gt": "apache02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7382,
+  "top1_desc": "High CPU utilization (100%) and frequent GC Allocation Failures indicate memory pressure and resource contention."
+ },
+ {
+  "job": "openrca_bank_1615060740_112__sc7",
+  "uuid": "openrca_bank_1615060740_112",
+  "gt": "Tomcat02",
+  "gt_fault": "JVM Out of Memory (OOM) Heap",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "MG01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7420,
+  "top1_desc": "Extreme JVM CPU load spike at onset, likely causing downstream service degradation and GC pressure on Tomcat."
+ },
+ {
+  "job": "openrca_bank_1614852540_1__sc2",
+  "uuid": "openrca_bank_1614852540_1",
+  "gt": "Redis02",
+  "gt_fault": "high memory usage",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Redis01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7524,
+  "top1_desc": "High CPU utilization and GC errors indicate application layer overload, directly causing downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1614797100_134__sc0",
+  "uuid": "openrca_bank_1614797100_134",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "Tomcat01",
+   "Mysql02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7559,
+  "top1_desc": "High JVM memory usage (peak 26.1912) and frequent GC errors in Tomcat instances indicate memory pressure leading to application failures."
+ },
+ {
+  "job": "openrca_bank_1615013160_5__sc0",
+  "uuid": "openrca_bank_1615013160_5",
+  "gt": "Tomcat03",
+  "gt_fault": "network latency",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "IG01",
+   "Tomcat03"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7643,
+  "top1_desc": "Extreme disk write peak indicates resource contention causing downstream service degradation."
+ },
+ {
+  "job": "openrca_bank_1614792360_45__sc4",
+  "uuid": "openrca_bank_1614792360_45",
+  "gt": "MG02",
+  "gt_fault": "high JVM CPU load",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "MG02",
+   "Tomcat03"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7644,
+  "top1_desc": "High CPU utilization (99.4347%) and JVM CPU load (50.0124%) indicate resource contention affecting downstream Tomcat services."
+ },
+ {
+  "job": "openrca_bank_1615255020_79__sc4",
+  "uuid": "openrca_bank_1615255020_79",
+  "gt": "Tomcat04",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Redis01"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7651,
+  "top1_desc": "High CPU utilization and GC errors indicate memory pressure causing performance degradation and cascading effects on downstream components."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc1",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "Redis01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7708,
+  "top1_desc": "High CPU idle time and GC errors indicate resource exhaustion leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615104480_11__sc0",
+  "uuid": "openrca_bank_1615104480_11",
+  "gt": "MG01",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7763,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure in the application server, causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616611380_121__sc6",
+  "uuid": "openrca_bank_1616611380_121",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "MG02"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 7922,
+  "top1_desc": "Extreme JVM memory usage spike (heap memory used reached 188M) directly caused GC failures in dependent services like Tomcat04."
+ },
+ {
+  "job": "openrca_bank_1614967200_70__sc3",
+  "uuid": "openrca_bank_1614967200_70",
+  "gt": "Mysql01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 8033,
+  "top1_desc": "High JVM memory usage and frequent GC errors indicate memory pressure directly impacting service performance."
+ },
+ {
+  "job": "openrca_bank_1616504820_44__sc3",
+  "uuid": "openrca_bank_1616504820_44",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "MG01",
+  "pred": [
+   "MG01",
+   "Tomcat04",
+   "IG02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 8058,
+  "top1_desc": "High disk read/write and disk percentage busy metrics indicate I/O bottlenecks affecting downstream components like Tomcat01-04."
+ },
+ {
+  "job": "openrca_bank_1615272120_80__sc6",
+  "uuid": "openrca_bank_1615272120_80",
+  "gt": "Redis02",
+  "gt_fault": "high CPU usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "IG02",
+   "MG02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 8437,
+  "top1_desc": "High disk utilization on sdb (DSKPercentBusy) and DSKReadWrite spikes indicate resource contention affecting downstream services."
+ },
+ {
+  "job": "openrca_bank_1614967200_70__sc1",
+  "uuid": "openrca_bank_1614967200_70",
+  "gt": "Mysql01",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat04",
+   "Mysql02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 8733,
+  "top1_desc": "High CPU utilization and memory usage leading to frequent GC errors, indicating resource exhaustion."
+ },
+ {
+  "job": "openrca_bank_1615105740_12__sc1",
+  "uuid": "openrca_bank_1615105740_12",
+  "gt": "Tomcat04",
+  "gt_fault": "network packet loss",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat02",
+   "Tomcat03"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 8830,
+  "top1_desc": "High CPU utilization and frequent GC pauses indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1614856920_3__sc7",
+  "uuid": "openrca_bank_1614856920_3",
+  "gt": "Tomcat02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat04",
+  "pred": [
+   "Tomcat04",
+   "MG01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9113,
+  "top1_desc": "Extreme CPU utilization and high disk I/O indicate a critical resource bottleneck in the application layer, cascading into downstream services."
+ },
+ {
+  "job": "openrca_bank_1615319040_62__sc1",
+  "uuid": "openrca_bank_1615319040_62",
+  "gt": "Tomcat04",
+  "gt_fault": "high disk space usage",
+  "top1": "Tomcat03",
+  "pred": [
+   "Tomcat03",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9384,
+  "top1_desc": "GC errors and extreme JVM memory usage indicate memory pressure causing application instability."
+ },
+ {
+  "job": "openrca_bank_1616432460_115__sc2",
+  "uuid": "openrca_bank_1616432460_115",
+  "gt": "MG01",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "MG01",
+   "Mysql02"
+  ],
+  "fr_rank": 2,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9585,
+  "top1_desc": "Extreme JVM memory usage indicates resource exhaustion leading to frequent GC cycles and potential application instability."
+ },
+ {
+  "job": "openrca_bank_1614797100_134__sc5",
+  "uuid": "openrca_bank_1614797100_134",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "IG02",
+  "pred": [
+   "IG02",
+   "MG02",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9627,
+  "top1_desc": "High JVM memory usage (peak 26.19) and GC errors in Tomcat instances indicate memory pressure and frequent garbage collection."
+ },
+ {
+  "job": "openrca_bank_1615086540_76__sc3",
+  "uuid": "openrca_bank_1615086540_76",
+  "gt": "IG02",
+  "gt_fault": "high CPU usage",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "Tomcat04",
+   "Tomcat02"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9645,
+  "top1_desc": "High JVM memory usage (peak 1.825B) and GC errors indicate memory pressure leading to performance degradation."
+ },
+ {
+  "job": "openrca_bank_1615274700_20__sc7",
+  "uuid": "openrca_bank_1615274700_20",
+  "gt": "Tomcat01",
+  "gt_fault": "network packet loss",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "IG01",
+   "Tomcat01"
+  ],
+  "fr_rank": 3,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9665,
+  "top1_desc": "Extreme spike in network packets indicates a potential bottleneck or misconfiguration causing high load on the Redis service, which could impact dependent services like Tomcat."
+ },
+ {
+  "job": "openrca_bank_1616560560_118__sc2",
+  "uuid": "openrca_bank_1616560560_118",
+  "gt": "MG02",
+  "gt_fault": "high disk I/O read usage",
+  "top1": "Redis01",
+  "pred": [
+   "Redis01",
+   "Tomcat01",
+   "Mysql01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 9688,
+  "top1_desc": "Extreme CPU utilization (70.6%) and high GC errors indicate resource contention or misconfiguration in Redis, directly impacting downstream services."
+ },
+ {
+  "job": "openrca_bank_1616586600_101__sc4",
+  "uuid": "openrca_bank_1616586600_101",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat02",
+  "pred": [
+   "Tomcat02",
+   "Tomcat01",
+   "MG01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 10137,
+  "top1_desc": "Extreme CPU utilization (99.2691%) and frequent GC errors indicate resource exhaustion causing performance degradation."
+ },
+ {
+  "job": "openrca_bank_1616602020_103__sc5",
+  "uuid": "openrca_bank_1616602020_103",
+  "gt": "MG02",
+  "gt_fault": "network latency",
+  "top1": "Tomcat01",
+  "pred": [
+   "Tomcat01",
+   "MG01",
+   "Tomcat04"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 10747,
+  "top1_desc": "High CPU utilization and disk I/O spikes directly correlate with GC errors, indicating resource exhaustion in the application layer."
+ },
+ {
+  "job": "openrca_bank_1615013160_5__sc6",
+  "uuid": "openrca_bank_1615013160_5",
+  "gt": "Tomcat03",
+  "gt_fault": "network latency",
+  "top1": "ServiceTest1",
+  "pred": [
+   "ServiceTest1",
+   "MG01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 11702,
+  "top1_desc": "Extreme peaks in app_mrt and app_sr indicate high application load, likely causing resource contention across the system."
+ },
+ {
+  "job": "openrca_bank_1614797100_134__sc3",
+  "uuid": "openrca_bank_1614797100_134",
+  "gt": "Mysql02",
+  "gt_fault": "high memory usage",
+  "top1": "IG01",
+  "pred": [
+   "IG01",
+   "MG01",
+   "Tomcat01"
+  ],
+  "fr_rank": null,
+  "m2_self_contra": "no",
+  "m1_premature": "no",
+  "think_chars": 12515,
+  "top1_desc": "Extreme network traffic spike on IG01's ens160 interface, directly contributing to upstream load and cascading effects on Tomcat services."
+ }
+]

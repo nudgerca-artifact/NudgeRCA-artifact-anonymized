@@ -1,0 +1,12 @@
+{"job": "openrca_bank_1615369860_114__sc3", "q5_causal_chain": "yes"}
+{"job": "openrca_bank_1615369860_114__sc7", "q5_causal_chain": "no"}
+{"job": "openrca_bank_1615384980_65__sc0", "q5_causal_chain": "no", "f_gt_considered": "yes"}
+{"job": "openrca_bank_1615384980_65__sc4", "m2_self_contra": "yes"}
+{"job": "openrca_bank_1615384980_65__sc5", "q5_causal_chain": "no"}
+{"job": "openrca_bank_1615385940_66__sc1", "q3_ungrounded": "yes", "q5_causal_chain": "yes"}
+{"job": "openrca_bank_1615385940_66__sc2", "q5_causal_chain": "yes", "m2_self_contra": "no"}
+{"job": "openrca_bank_1615385940_66__sc6", "q5_causal_chain": "yes"}
+{"job": "openrca_bank_1615515120_93__sc0", "q3_ungrounded": "yes", "q4_mag_rationale": "no"}
+{"job": "openrca_bank_1615515120_93__sc1", "q4_mag_rationale": "no"}
+{"job": "openrca_bank_1615515120_93__sc6", "q4_mag_rationale": "no"}
+{"job": "openrca_bank_1615515120_93__sc7", "q4_mag_rationale": "no"}

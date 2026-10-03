@@ -1,0 +1,82 @@
+{
+ "model": "Gemma4-E4B_trained-int4_telecom",
+ "dtype": "bfloat16",
+ "n": 10,
+ "sec_mean": 12.13,
+ "sec_median": 11.36,
+ "tok_per_s_mean": 119.0,
+ "out_tokens_mean": 1445,
+ "gpu_after": "41443 MiB, 46068 MiB, NVIDIA L40S",
+ "records": [
+  {
+   "case_id": "qt_009",
+   "sec": 11.3,
+   "out_tokens": 1254,
+   "tok_per_s": 111.0,
+   "prompt_tokens": 1431
+  },
+  {
+   "case_id": "qt_012",
+   "sec": 12.56,
+   "out_tokens": 1502,
+   "tok_per_s": 119.6,
+   "prompt_tokens": 2619
+  },
+  {
+   "case_id": "qt_035",
+   "sec": 13.6,
+   "out_tokens": 1582,
+   "tok_per_s": 116.3,
+   "prompt_tokens": 3545
+  },
+  {
+   "case_id": "qt_040",
+   "sec": 9.74,
+   "out_tokens": 1170,
+   "tok_per_s": 120.1,
+   "prompt_tokens": 2545
+  },
+  {
+   "case_id": "qt_044",
+   "sec": 10.81,
+   "out_tokens": 1289,
+   "tok_per_s": 119.3,
+   "prompt_tokens": 2762
+  },
+  {
+   "case_id": "qt_050",
+   "sec": 11.38,
+   "out_tokens": 1376,
+   "tok_per_s": 120.9,
+   "prompt_tokens": 2300
+  },
+  {
+   "case_id": "qt_003",
+   "sec": 11.34,
+   "out_tokens": 1338,
+   "tok_per_s": 118.0,
+   "prompt_tokens": 3080
+  },
+  {
+   "case_id": "qt_005",
+   "sec": 13.99,
+   "out_tokens": 1693,
+   "tok_per_s": 121.0,
+   "prompt_tokens": 2205
+  },
+  {
+   "case_id": "qt_006",
+   "sec": 15.74,
+   "out_tokens": 1934,
+   "tok_per_s": 122.8,
+   "prompt_tokens": 1655
+  },
+  {
+   "case_id": "qt_011",
+   "sec": 10.86,
+   "out_tokens": 1309,
+   "tok_per_s": 120.5,
+   "prompt_tokens": 2418
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+All 640 trajectories: examines two or more candidates 100, reasons about propagation 100, largest anomaly as the stated rationale 76, own analysis points to another component 68, cites another component's signal 66, correct component 14 (%).
+
+Agreement between the two judge runs per question: q1_scan 100%, q2_prop 100%, q3_ungrounded 88%, q4_mag_rationale 90%, q5_causal_chain 90%, f_gt_considered 93%, m1_premature 99%, m2_self_contra 88%, m3_stop_after_commit 100%.
+Cohen's kappa between the two judge runs per question (questions answered yes in almost no trajectory have kappa near 0 by construction): q1_scan n/a (all yes), q2_prop n/a (all yes), q3_ungrounded 0.73, q4_mag_rationale 0.68, q5_causal_chain 0.80, f_gt_considered 0.83, m1_premature 0.70 (yes in 6 / 11 of 648), m2_self_contra 0.70, m3_stop_after_commit -0.00 (yes in 1 / 1 of 648).
+
+Split by whether the cause is in the top group by summed deviation:
+[gt_in_top] cases=48 trajs=384 success=65/384 (17%)
+   q4_mag_rationale: 74%
+   m2_self_contra: 65%
+   q3_ungrounded: 71%
+   q5_causal_chain: 45%
+   f_gt_considered: 74%
+[gt_below_top] cases=32 trajs=256 success=25/256 (10%)
+   q4_mag_rationale: 79%
+   m2_self_contra: 71%
+   q3_ungrounded: 59%
+   q5_causal_chain: 45%
+   f_gt_considered: 71%
+tied-at-top per case: mean 4.6
+
+The first-listed candidate on the fault-free-rarity input (evaluation cases that ask for the component):
+== telecom: cases r1=GT 5 / r1!=GT 5
+   r1=GT: trajs=40 follow-rank1=48% correct=48%
+   r1!=GT: trajs=40 follow-rank1=55% correct=20%
+== bank: cases r1=GT 17 / r1!=GT 8
+   r1=GT: trajs=136 follow-rank1=65% correct=65%
+   r1!=GT: trajs=64 follow-rank1=62% correct=8%
+== market: cases r1=GT 1 / r1!=GT 34
+   r1=GT: trajs=8 follow-rank1=100% correct=100%
+   r1!=GT: trajs=272 follow-rank1=83% correct=7%
+== aiops: cases r1=GT 73 / r1!=GT 86
+   r1=GT: trajs=584 follow-rank1=54% correct=80%
+   r1!=GT: trajs=688 follow-rank1=35% correct=15%
+== total
+   r1=GT: cases=96 trajs=768 follow-rank1=56% correct=76%
+   r1!=GT: cases=133 trajs=1064 follow-rank1=50% correct=13%
+
+FoundRoot-14B on its authors' released input (55 shared incidents):
+[single most-metrics component] cases=21 | FoundRoot-14B: follow 13/18, correct 10/18 | untrained Qwen3-4B: follow 58/165, correct 41/165
+[  = GT] cases=15 | FoundRoot-14B: follow 10/12, correct 10/12 | untrained Qwen3-4B: follow 39/117, correct 39/117
+[  != GT] cases=6 | FoundRoot-14B: follow 3/6, correct 0/6 | untrained Qwen3-4B: follow 19/48, correct 2/48

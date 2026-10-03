@@ -1,0 +1,2 @@
+[rq5r-market-PP90] Strict 12.3% | Partial 25.3% (samples 480, cases 60)
+  fields: component 34.3% | reason 30.4% | time 46.8%  difficulty: easy S:15%/P:23% | hard S:16%/P:39% | middle S:8%/P:24%

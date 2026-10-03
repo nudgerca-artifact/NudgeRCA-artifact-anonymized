@@ -1,0 +1,2 @@
+[rq5-telecom-HP60] Strict 42.9% | Partial 58.2% (samples 168, cases 21)
+  fields: component 41.2% | reason 63.4% | time 57.7%  difficulty: easy S:64%/P:65% | hard S:6%/P:45% | middle S:34%/P:56%
