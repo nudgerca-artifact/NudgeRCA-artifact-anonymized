@@ -22,3 +22,5 @@ prompts) and probe the latency: `run_int4.sh` for the Qwen3 sizes and `run_int4_
 its calibration runs through the whole model (the last 18 layers reuse the KV states of an earlier layer, so layer-by-layer calibration fails),
 and every linear layer of its language model is quantized (`quantize_gptq_gemma4.py`); `family.py` builds the Gemma 4 prompt and sampling
 settings used by the probe.
+
+![fig_07](fig_07.png)

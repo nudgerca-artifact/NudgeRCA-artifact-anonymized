@@ -82,3 +82,4 @@ leg = ax.legend(handles, [LABEL[n] for n in bars], handler_map={tuple: HandlerTu
 fig.tight_layout(pad=0.15); out = os.path.join(OUTDIR, "fig_07.pdf")
 fig.canvas.draw(); _l, _a = leg.get_window_extent(), ax.get_window_extent(); print(f"legend width {_l.width / fig.dpi:.2f} in, plot width {_a.width / fig.dpi:.2f} in")
 fig.savefig(out, bbox_inches="tight", pad_inches=0.015); print("saved", out)
+fig.savefig(out[:-4] + ".png", bbox_inches="tight", pad_inches=0.015, dpi=300)   # preview for viewers that do not render the PDF

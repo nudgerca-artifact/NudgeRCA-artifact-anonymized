@@ -12,3 +12,5 @@ Five steps, each scored with avg@8 on the evaluation incidents of the four datas
 
 `build_fig06_data.py` scores every response and writes `data/ablation.json`; `fig_06.py` plots component, fault type and time accuracy over
 all evaluation incidents (`fig_06.pdf`). The partial-credit pairs D_credit appear as `graded` in the data files.
+
+![fig_06](fig_06.png)

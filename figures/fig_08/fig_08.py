@@ -41,3 +41,4 @@ fig.subplots_adjust(left=0.15, right=0.985, bottom=0.25, top=0.81, wspace=0.18)
 h, l = axes[0].get_legend_handles_labels()
 fig.legend(h, l, loc="upper center", bbox_to_anchor=(0.57, 1.0), ncol=2, frameon=False, handlelength=2.2, columnspacing=1.2, handletextpad=0.4, borderaxespad=0.1)
 out = os.path.join(sys.argv[1] if len(sys.argv) > 1 else HERE, "fig_08.pdf"); fig.savefig(out, bbox_inches="tight", pad_inches=0.01); print("saved", out)
+fig.savefig(out[:-4] + ".png", bbox_inches="tight", pad_inches=0.01, dpi=300)   # preview for viewers that do not render the PDF

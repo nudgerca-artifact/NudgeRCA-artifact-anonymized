@@ -9,3 +9,5 @@ The two excerpts are copied verbatim from the two trajectory files in `data/traj
 `select.py` scans the full Section 3.2 trajectory set and lists the candidate trajectories from the adjudicated judgments of `../section_3/behavior_judge/` into
 `data/candidates.json`. `render_excerpt.py <job>` writes the paragraphs of one trajectory to `data/excerpt_<job>.json` to locate the quoted
 passages.
+
+

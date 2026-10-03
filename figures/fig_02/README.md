@@ -13,3 +13,5 @@ exceeds it in 17 windows, 13 of them inside incident windows. `fig_02.pdf` is th
 Inputs (`data/`): the two series (`metric_pair_series.json`, `metric_pair_bins.json`), the incident windows (`incident_windows.json`) and the
 per-window bands of the rule (`band_tables.json`). `prep_bands.py` computed `band_tables.json` from the raw OpenRCA Bank telemetry
 (`$RCA_DATASETS/OpenRCA/Bank/telemetry/`); `run.sh` runs a script in `work/` with the data files beside it.
+
+![fig_02](fig_02.png)

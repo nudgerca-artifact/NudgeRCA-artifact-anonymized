@@ -10,7 +10,7 @@ Python 3.10 or newer. Run `pip install numpy pandas matplotlib`. No GPU, model w
 ## Contents
 
 - `figures/`: one folder per figure or table of the paper (`fig_01` to `fig_08`, `table_01` to `table_04`), each with its script, its
-  data (`data/`) and its output (`fig_NN.pdf` or `table_NN.txt`). `figures/section_3/` holds the trajectory judgments of Section 3.2, and
+  data (`data/`) and its output (`fig_NN.pdf` with a `fig_NN.png` preview, or `table_NN.txt`). `figures/section_3/` holds the trajectory judgments of Section 3.2, and
   `figures/common/` the shared helpers.
 - `nudgerca/`: the evaluation inputs (the prompts of the evaluation incidents and the train / eval splits), the responses of NudgeRCA-4B and
   of the off-the-shelf Qwen3-4B, and the scorer (`inference/score_openrca_corrected.py`, the OpenRCA criteria of Section 5.1.2).

@@ -17,3 +17,5 @@ the entire fault-free period of Telecom and Bank are the paper's evaluation (`nu
 `code/` holds the scripts that built the inputs of the runs (`interval_eob.py` for Bank and Telecom, `interval_eob_market_paper.py` for
 Market, `sens_norm_slots.py` and `case_norms.py` for the log and trace baselines, `finalize.py` for the prompts). They need the raw
 telemetry and the preprocessing pipeline and document how the inputs were built.
+
+![fig_08](fig_08.png)

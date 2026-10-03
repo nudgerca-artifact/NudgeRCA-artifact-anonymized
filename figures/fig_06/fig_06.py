@@ -42,3 +42,4 @@ h, l = [h[l.index(k)] for k in ORDER], ORDER
 fig.legend(h, l, loc="upper center", bbox_to_anchor=(0.55, 1.03), ncol=3, frameon=False, handlelength=1.6, columnspacing=0.5, handletextpad=0.25, borderaxespad=0.1)
 fig.subplots_adjust(left=0.17, right=0.98, bottom=0.22, top=0.86)
 out = os.path.join(OUTDIR, "fig_06.pdf"); fig.savefig(out, bbox_inches="tight", pad_inches=0.015); print("saved", out)
+fig.savefig(out[:-4] + ".png", bbox_inches="tight", pad_inches=0.015, dpi=300)   # preview for viewers that do not render the PDF
